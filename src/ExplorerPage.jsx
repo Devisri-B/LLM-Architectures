@@ -21,6 +21,16 @@ import CodeQwenArchitecture from './architectures/CodeQwenArchitecture';
 import MathQwenArchitecture from './architectures/MathQwenArchitecture';
 import GeminiBaseArchitecture from './architectures/GeminiBaseArchitecture';
 import CodeLlamaBaseArchitecture from './architectures/CodeLlamaBaseArchitecture';
+import Falcon7BArchitecture from './architectures/Falcon7BArchitecture';
+import Falcon40BArchitecture from './architectures/Falcon40BArchitecture';
+import Falcon180BArchitecture from './architectures/Falcon180BArchitecture';
+import Falcon2_11BArchitecture from './architectures/Falcon2_11BArchitecture';  
+import Falcon2_11B_VLMArchitecture from './architectures/Falcon2_11B_VLMArchitecture';
+import Falcon3_Mamba_7BArchitecture from './architectures/Falcon3_Mamba_7BArchitecture';
+import Falcon3_1B_BaseArchitecture from './architectures/Falcon3_1B_BaseArchitecture';
+import Falcon3_3B_BaseArchitecture from './architectures/Falcon3_3B_BaseArchitecture';
+import Falcon3_7B_BaseArchitecture from './architectures/Falcon3_7B_BaseArchitecture';
+import Falcon3_10B_BaseArchitecture from './architectures/Falcon3_10B_BaseArchitecture';
 
 import GPT1 from './architectures/GPT-1';
 import GPT2 from './architectures/GPT-2';
@@ -44,11 +54,19 @@ import DeepSeekR1 from './architectures/DeepSeek-R1';
 import DeepSeekV3 from './architectures/DeepSeek-V3';
 
 
-
-
 // --- Data and Configuration ---
 
 const architectureMapping = {
+  "Falcon-7B" : Falcon7BArchitecture,
+  "Falcon-40B": Falcon40BArchitecture,
+  "Falcon-180B": Falcon180BArchitecture,
+  "Falcon2-11B": Falcon2_11BArchitecture,
+  "Falcon2-11B-VLM": Falcon2_11B_VLMArchitecture,
+  "Falcon3-Mamba-7B": Falcon3_Mamba_7BArchitecture,
+  "Falcon3-1B-3B": Falcon3_1B_BaseArchitecture,
+  "Falcon3-3B-Base": Falcon3_3B_BaseArchitecture,
+  "Falcon3-7B-Base": Falcon3_7B_BaseArchitecture,
+  "Falcon3-10B-Base": Falcon3_10B_BaseArchitecture,
   "Codex": CodexArchitecture,
   "Sora": SoraArchitecture,
   "DeepSeekCoder-V2": DeepSeekCoderV2Architecture,
