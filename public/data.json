@@ -2,7 +2,7 @@
   "companies": {
     "anthropic": {
       "name": "Anthropic",
-      "image": "/images/cluade.jpeg",
+      "image": "./images/cluade.jpeg",
       "models": [
         {
           "name": "Claude 2",
@@ -118,7 +118,7 @@
     },
     "openai": {
       "name": "OpenAI",
-      "image": "/images/gpt.png",
+      "image": "./images/gpt.png",
       "models": [
         {
           "name": "GPT-1",
@@ -432,7 +432,7 @@
     },
     "deepseek": {
       "name": "DeepSeek AI",
-      "image": "/images/deepseek.png",
+      "image": "./images/deepseek.png",
       "models": [
         {
           "name": "DeepSeek-V3",
@@ -526,7 +526,7 @@
     },
     "meta": {
       "name": "Meta",
-      "image": "/images/meta.png",
+      "image": "./images/meta.png",
       "models": [
         {
           "name": "Code Llama-Instruct",
@@ -642,7 +642,7 @@
     },
     "google": {
       "name": "Google",
-      "image": "/images/google.webp",
+      "image": "./images/google.webp",
       "models": [
         {
           "name": "GeminiBase",
@@ -780,7 +780,7 @@
     },
     "falcon": {
       "name": "Falcon",
-      "image": "/images/falcon.jpeg",
+      "image": "./images/falcon.jpeg",
       "models": [
         {
           "name": "Falcon-7B",
@@ -1006,7 +1006,7 @@
     },
     "alibaba": {
       "name": "Alibaba",
-      "image": "/images/qwen1.png",
+      "image": "./images/qwen1.png",
       "models": [
         {
           "name": "Qwen-Base",
