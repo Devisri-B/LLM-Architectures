@@ -61,7 +61,7 @@ const architectureMapping = {
   "Falcon-40B": Falcon40BArchitecture,
   "Falcon-180B": Falcon180BArchitecture,
   "Falcon2-11B": Falcon2_11BArchitecture,
-  "Falcon2-11B-VLM": Falcon2_11B_VLMArchitecture,
+  "Falcon2-11B VLM": Falcon2_11B_VLMArchitecture,
   "Falcon3-Mamba-7B": Falcon3_Mamba_7BArchitecture,
   "Falcon3-1B-3B": Falcon3_1B_BaseArchitecture,
   "Falcon3-3B-Base": Falcon3_3B_BaseArchitecture,
