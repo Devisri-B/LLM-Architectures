@@ -17,7 +17,7 @@ const initialNodes = [
 ];
 
 const initialEdges = [
-  { id: 'e1-2', source: '1', target: '2' },
+  { id: 'e1-2', source: '1', target: '2a' },
   { id: 'e2a-2b', source: '2a', target: '2b' },
   { id: 'e2b-3', source: '2b', target: '3' },
   { id: 'e3-4', source: '3', target: '4' },
