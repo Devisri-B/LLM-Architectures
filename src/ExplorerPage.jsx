@@ -399,7 +399,7 @@ const ExplorerPage = () => {
 
   // --- Data Fetching ---
   useEffect(() => {
-    fetch('/data.json')
+    fetch(`${process.env.PUBLIC_URL}/data.json`)
       .then(response => {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
