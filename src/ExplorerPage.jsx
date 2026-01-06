@@ -388,7 +388,7 @@ const ExplorerPage = () => {
   const [error, setError] = useState(null);
   const [currentCompanyKey, setCurrentCompanyKey] = useState(null);
   const [currentModelName, setCurrentModelName] = useState(null);
-  const [selectedFeatures, setSelectedFeatures] = useState(detailFields.filter(f => f !== 'Architecture Diagram')); // Default selection
+  const [selectedFeatures, setSelectedFeatures] = useState(detailFields); // Default selection - includes all features
   const [selectedCompareModels, setSelectedCompareModels] = useState([]);
   const [breadcrumbs, setBreadcrumbs] = useState([]);
 
@@ -447,7 +447,7 @@ const ExplorerPage = () => {
 
      // Reset selections when navigating away from compare/details
      if (targetView !== 'compare') setSelectedCompareModels([]);
-     if (targetView !== 'details') setSelectedFeatures(detailFields.filter(f => f !== 'Architecture Diagram')); // Reset features or keep? User preference needed. Let's reset.
+     if (targetView !== 'details') setSelectedFeatures(detailFields); // Reset to all features when changing views
   }, [updateBreadcrumbs]);
 
     const showHome = useCallback(() => navigateTo("home"), [navigateTo]);
