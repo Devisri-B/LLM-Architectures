@@ -31,6 +31,7 @@ import Falcon3_1B_BaseArchitecture from './architectures/Falcon3_1B_BaseArchitec
 import Falcon3_3B_BaseArchitecture from './architectures/Falcon3_3B_BaseArchitecture';
 import Falcon3_7B_BaseArchitecture from './architectures/Falcon3_7B_BaseArchitecture';
 import Falcon3_10B_BaseArchitecture from './architectures/Falcon3_10B_BaseArchitecture';
+import EmbeddingModelsArchitecture from './architectures/EmbeddingModelsArchitecture';
 
 import GPT1 from './architectures/GPT-1';
 import GPT2 from './architectures/GPT-2';
@@ -88,6 +89,7 @@ const architectureMapping = {
   "GPT-4o": GPT4o,
   "O1-preview": GPTo1Preview,
   "O1-mini": GPTo1Mini,
+  "Embedding Models": EmbeddingModelsArchitecture,
   "Gemini": Gemini,
   "GeminiBase": GeminiBaseArchitecture,
   "Gemini1.5": Gemini15Architecture,
@@ -98,7 +100,7 @@ const architectureMapping = {
   "LLaMA 2": Llama2,
   "Code Llama": CodeLlamaBaseArchitecture,
   "Code Llama-Instruct": LlamaInstructArchitecture,
-  "Lamda": Lamda,
+  "LaMDA": Lamda,
   "Qwen": Qwen,
   "Qwen-Base": QwenBaseArchitecture,
   "Qwen-Chat": QwenChatArchitecture,
