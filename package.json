@@ -1,8 +1,8 @@
 {
-  "name": "my-llm-model-explorer",
+  "name": "LLM-Architectures",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Devisri-B.github.io/LLM-Architectures",
+  "homepage": "https://devisri-b.github.io/LLM-Architectures/",
   "dependencies": {
     "@craco/craco": "^5.9.0",
     "@testing-library/dom": "^10.4.0",
