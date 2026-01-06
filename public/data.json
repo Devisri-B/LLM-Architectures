@@ -1,0 +1,1102 @@
+{
+  "companies": {
+    "anthropic": {
+      "name": "Anthropic",
+      "image": "/images/cluade.jpeg",
+      "models": [
+        {
+          "name": "Claude 2",
+          "features": {
+            "Developer": "Anthropic (founded by former OpenAI researchers)",
+            "Architecture": "Transformer with multi-head self-attention, positional embeddings, layer normalization, and residual connections.",
+            "Training Data": "Publicly available web data, licensed datasets, and user-generated materials. Includes 10% non-English data.",
+            "Parameters": "Billions of parameters (exact number not specified).",
+            "Attention Mechanism": "Multi-Head Self-Attention.",
+            "Text Generation": "Generates coherent and contextually accurate text.",
+            "Language Translation": "Supports multilingual tasks with 10% non-English data.",
+            "Code Generation": "Strong performance in code completion and debugging.",
+            "Image Generation": "Not Supported (Text-to-text model only).",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Excels in summarization tasks.",
+            "Question Answering": "Handles complex reasoning and question-answering tasks.",
+            "Safety Features": "Constitutional AI, reinforcement learning from human feedback (RLHF), and red-teaming.",
+            "Creativity": "Generates creative content like stories and poems.",
+            "Versatility": "Handles a wide range of natural language tasks.",
+            "Privacy Concerns": "SOC 2 Type II compliant; data retention policies apply.",
+            "Bias and Misinformation": "Uses Constitutional AI to minimize biases and misinformation."
+          }
+        },
+        {
+          "name": "Claude 3 Opus",
+          "features": {
+            "Developer": "Anthropic",
+            "Architecture": "Transformer with multi-head self-attention and multimodal input embeddings.",
+            "Training Data": "Publicly accessible web data, licensed third-party datasets, and curated internal data. Includes image-text pairs.",
+            "Parameters": "Undisclosed (Estimated >1 Trillion based on capabilities).",
+            "Attention Mechanism": "Multi-Head Self-Attention with cross-modal attention.",
+            "Text Generation": "Generates coherent and contextually accurate text.",
+            "Language Translation": "Supports multilingual tasks with improved non-English performance.",
+            "Code Generation": "Excels in coding, reasoning, and translation tasks.",
+            "Image Generation": "Not Supported (Can analyze images but not generate them).",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Excels in summarization tasks.",
+            "Question Answering": "Handles complex reasoning and question-answering tasks.",
+            "Safety Features": "Constitutional AI, rigorous safety testing, and adversarial testing.",
+            "Creativity": "Generates creative content like stories, poems, and multimedia outputs.",
+            "Versatility": "Handles text, images, and complex reasoning tasks.",
+            "Privacy Concerns": "Commercial use data not used for training by default.",
+            "Bias and Misinformation": "Uses Constitutional AI to minimize biases and misinformation."
+          }
+        },
+        {
+          "name": "Claude 3 Sonnet",
+          "features": {
+            "Developer": "Anthropic",
+            "Architecture": "Transformer with multi-head self-attention and multimodal input embeddings.",
+            "Training Data": "Publicly accessible web data, licensed third-party datasets, and curated internal data. Includes image-text pairs.",
+            "Parameters": "Undisclosed (Mid-sized model).",
+            "Attention Mechanism": "Multi-Head Self-Attention with cross-modal attention.",
+            "Text Generation": "Generates high-quality text with rapid language understanding.",
+            "Language Translation": "Supports multilingual tasks with improved non-English performance.",
+            "Code Generation": "Strong performance in code completion and debugging.",
+            "Image Generation": "Not Supported (Can analyze images but not generate them).",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Excels in summarization tasks.",
+            "Question Answering": "Handles complex reasoning and question-answering tasks.",
+            "Safety Features": "Constitutional AI, rigorous safety testing, and adversarial testing.",
+            "Creativity": "Generates creative content like stories and poems.",
+            "Versatility": "Handles text, images, and complex reasoning tasks.",
+            "Privacy Concerns": "Commercial use data not used for training by default.",
+            "Bias and Misinformation": "Uses Constitutional AI to minimize biases and misinformation."
+          }
+        },
+        {
+          "name": "Claude 3 Haiku",
+          "features": {
+            "Developer": "Anthropic",
+            "Architecture": "Transformer with multi-head self-attention and multimodal input embeddings.",
+            "Training Data": "Publicly accessible web data, licensed third-party datasets, and curated internal data. Includes image-text pairs.",
+            "Parameters": "Undisclosed (Lightweight model).",
+            "Attention Mechanism": "Multi-Head Self-Attention with cross-modal attention.",
+            "Text Generation": "Generates coherent and contextually accurate text.",
+            "Language Translation": "Supports multilingual tasks with improved non-English performance.",
+            "Code Generation": "Strong performance in code completion and debugging.",
+            "Image Generation": "Not Supported (Can analyze images but not generate them).",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Excels in summarization tasks.",
+            "Question Answering": "Handles complex reasoning and question-answering tasks.",
+            "Safety Features": "Constitutional AI, rigorous safety testing, and adversarial testing.",
+            "Creativity": "Generates creative content like stories and poems.",
+            "Versatility": "Handles text, images, and complex reasoning tasks.",
+            "Privacy Concerns": "Commercial use data not used for training by default.",
+            "Bias and Misinformation": "Uses Constitutional AI to minimize biases and misinformation."
+          }
+        },
+        {
+          "name": "Claude 3.5 Haiku",
+          "features": {
+            "Developer": "Anthropic",
+            "Architecture": "Transformer-based (Proprietary); optimized for low-latency and high throughput.",
+            "Training Data": "Proprietary mix of publicly available data, third-party licensed data, and user feedback; data cutoff approx. July 2024.",
+            "Parameters": "Undisclosed (Lightweight category, significantly smaller than Sonnet/Opus).",
+            "Attention Mechanism": "Multi-Head Self-Attention with efficient context handling.",
+            "Text Generation": "High speed and efficiency; 3x faster than Claude 3 Haiku.",
+            "Language Translation": "Strong multilingual capabilities, optimized for speed.",
+            "Code Generation": "Proficient in lightweight coding tasks and modernizing legacy code.",
+            "Image Generation": "Not Supported (Multimodal input only; can analyze images but not create them).",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Excellent; optimized for processing large volumes of text quickly.",
+            "Question Answering": "High accuracy with reduced latency for customer support applications.",
+            "Safety Features": "Constitutional AI, refusal of harmful prompts, and rigorous red-teaming.",
+            "Creativity": "Capable of creative writing and roleplay, though less nuanced than Sonnet/Opus.",
+            "Versatility": "Specialized for chatbots, data extraction, and real-time tasks.",
+            "Privacy Concerns": "SOC 2 Type II compliant; API data not trained on by default.",
+            "Bias and Misinformation": "Mitigated via Constitutional AI training."
+          }
+        }
+      ]
+    },
+    "openai": {
+      "name": "OpenAI",
+      "image": "/images/gpt.png",
+      "models": [
+        {
+          "name": "GPT-1",
+          "features": {
+            "Developer": "OpenAI",
+            "Architecture": "12-layer decoder-only Transformer with masked self-attention.",
+            "Training Data": "BooksCorpus (approx. 7,000 unpublished books).",
+            "Parameters": "117 Million.",
+            "Attention Mechanism": "Multi-Head Self-Attention (unidirectional).",
+            "Text Generation": "Yes (First successful demonstration of generative pre-training).",
+            "Language Translation": "Limited (Zero-shot performance was experimental).",
+            "Code Generation": "Poor (Not explicitly trained for code).",
+            "Image Generation": "Not Supported.",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Capable via zero-shot prompting, though less coherent than later models.",
+            "Question Answering": "Basic capabilities via zero-shot transfer.",
+            "Safety Features": "Minimal (Pre-dates modern safety alignment techniques).",
+            "Creativity": "Low relative to modern standards; coherent but repetitive.",
+            "Versatility": "Proof-of-concept for generalist language models.",
+            "Privacy Concerns": "N/A (Historic model).",
+            "Bias and Misinformation": "Significant; reflected biases in the BooksCorpus dataset."
+          }
+        },
+        {
+          "name": "GPT-2",
+          "features": {
+            "Developer": "OpenAI",
+            "Architecture": "Transformer architecture (specifically designed for language modeling), featuring self-attention, layer normalization, and residual connections; can process up to 1,024 tokens at once.",
+            "Training Data": "WebText (over 8 million web pages sourced from Reddit links with at least three upvotes, totaling ~40 GB of text).",
+            "Parameters": "Up to 1.5 billion.",
+            "Attention Mechanism": "Multi-Head Self-Attention.",
+            "Text Generation": "Yes, primary function (auto-regressive language modeling).",
+            "Language Translation": "Supported if fine-tuned (not a core function).",
+            "Code Generation": "Poor; specifically trained Python variants existed, but base model was not optimized for code.",
+            "Image Generation": "Not Supported.",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Supported via zero-shot prompting.",
+            "Question Answering": "Supported via zero-shot prompting.",
+            "Safety Features": "Minimal; released in staged manner to prevent misuse.",
+            "Creativity": "Moderate; demonstrated ability to write coherent essays.",
+            "Versatility": "Primarily focused on text generation, can be adapted with fine-tuning.",
+            "Privacy Concerns": "Model weights are public; no API data privacy issues.",
+            "Bias and Misinformation": "Can inherit biases from WebText; no specialized mitigation described."
+          }
+        },
+        {
+          "name": "GPT-3",
+          "features": {
+            "Developer": "OpenAI",
+            "Architecture": "Transformer-based, scaled up from GPT-2 with more layers and parameters, using multi-head self-attention.",
+            "Training Data": "Mixture of filtered Common Crawl, expanded WebText, two book corpora, and English Wikipedia; includes quality filtering and deduplication.",
+            "Parameters": "Ranges from 125 million up to 175 billion, depending on model size.",
+            "Attention Mechanism": "Multi-Head Self-Attention over sequences up to 2,048 tokens.",
+            "Text Generation": "Yes (auto-regressive language modeling).",
+            "Language Translation": "Supported if fine-tuned or via zero/few-shot prompts.",
+            "Code Generation": "Capable; demonstrated ability to generate simple code snippets.",
+            "Image Generation": "Not Supported.",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Supported if fine-tuned or via zero/few-shot prompts.",
+            "Question Answering": "Supported if fine-tuned or via zero/few-shot prompts.",
+            "Safety Features": "Basic data filtering; later instructed versions added RLHF.",
+            "Creativity": "High; capable of creative writing and poetry.",
+            "Versatility": "Handles a wide range of NLP tasks, especially strong in zero/few-shot settings.",
+            "Privacy Concerns": "Standard OpenAI API data retention policies apply.",
+            "Bias and Misinformation": "May inherit dataset biases; no explicit mitigation in original paper."
+          }
+        },
+        {
+          "name": "GPT-3.5",
+          "features": {
+            "Developer": "OpenAI",
+            "Architecture": "Transformer (built upon GPT-3 with refined self-attention and better instruction-following).",
+            "Training Data": "Extended from GPT-3 with a larger, more diverse dataset that includes additional code and text data.",
+            "Parameters": "Approximately 175 billion (similar scale to GPT-3’s largest variant).",
+            "Attention Mechanism": "Multi-Head Self-Attention, refined for improved context understanding.",
+            "Text Generation": "Yes, improved coherence and compliance with prompts.",
+            "Language Translation": "Supported, typically through fine-tuning or few-shot learning.",
+            "Code Generation": "Supported (notably via code-davinci models).",
+            "Image Generation": "Not Supported.",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Supported, with improved accuracy over GPT-3.",
+            "Question Answering": "Supported, with better instruction-following capabilities.",
+            "Safety Features": "Reinforcement Learning from Human Feedback (RLHF) for alignment.",
+            "Creativity": "High; improved ability to follow creative constraints.",
+            "Versatility": "Handles a broad range of text and coding tasks with enhanced instruction adherence.",
+            "Privacy Concerns": "Standard OpenAI enterprise privacy protocols.",
+            "Bias and Misinformation": "Partially addressed through improved alignment; details remain limited."
+          }
+        },
+        {
+          "name": "GPT-4",
+          "features": {
+            "Developer": "OpenAI",
+            "Architecture": "Transformer (multimodal, capable of interpreting text and images).",
+            "Training Data": "Extensive, diverse public text and licensed data (details undisclosed).",
+            "Parameters": "Estimated at ~1.76 trillion total via Mixture-of-Experts.",
+            "Attention Mechanism": "Multi-Head Self-Attention plus multimodal integration.",
+            "Text Generation": "Supported, with advanced reasoning and extended context window.",
+            "Language Translation": "Supported, improved compared to GPT-3.5.",
+            "Code Generation": "Supported, proficient in code-related tasks.",
+            "Image Generation": "Not Supported (can interpret images but does not generate them).",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Supported, with higher accuracy than earlier GPT models.",
+            "Question Answering": "Supported, significantly improved comprehension and alignment.",
+            "Safety Features": "Yes, RLHF and alignment protocols to reduce harmful outputs.",
+            "Creativity": "Yes, more advanced reasoning for creative text.",
+            "Versatility": "Handles text tasks, can also interpret images for queries.",
+            "Privacy Concerns": "Data not used for training for Enterprise/API users by default.",
+            "Bias and Misinformation": "Mitigation measures included but not fully disclosed."
+          }
+        },
+        {
+          "name": "GPT-4o",
+          "features": {
+            "Developer": "OpenAI",
+            "Architecture": "Transformer (multimodal) with RBRMs (Reward-Based Reinforcement Mechanisms) and enhanced interactions.",
+            "Training Data": "Multimodal data (text, code, images, audio, video) up to October 2023.",
+            "Parameters": "Undisclosed (Estimated ~200B active parameters / 1.8T total).",
+            "Attention Mechanism": "Multi-Head Self-Attention plus specialized modules for multimodal fusion.",
+            "Text Generation": "Supported, advanced across multiple domains.",
+            "Language Translation": "Supported; highly capable across major languages.",
+            "Code Generation": "Supported; State-of-the-art performance in coding benchmarks.",
+            "Image Generation": "Supported (can interpret and generate images).",
+            "Video Generation": "Supported, indicating motion content generation or analysis.",
+            "Summarization": "Supported; capable of summarizing audio, video, and text.",
+            "Question Answering": "Supported, including multimodal Q&A capabilities.",
+            "Safety Features": "Data filtering, user content control, RLHF-based alignment, risk mitigation.",
+            "Creativity": "Yes, covers text, audio, image, and video generative capabilities.",
+            "Versatility": "Handles broad multimodal tasks, from text to video creation.",
+            "Privacy Concerns": "Yes, includes user image opt-out and content filtering.",
+            "Bias and Misinformation": "Risk assessment and mitigation steps in place."
+          }
+        },
+        {
+          "name": "Codex",
+          "features": {
+            "Developer": "OpenAI",
+            "Architecture": "Transformer (GPT-3 variant tuned for code).",
+            "Training Data": "Text and code from various sources (including public code repositories).",
+            "Parameters": "12 billion.",
+            "Attention Mechanism": "Multi-Head Self-Attention.",
+            "Text Generation": "Limited (Primarily optimized for code comments and docstrings).",
+            "Language Translation": "No (Programming language translation only).",
+            "Code Generation": "Supported (main function).",
+            "Image Generation": "Not Supported.",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Supported (Code summarization).",
+            "Question Answering": "Supported (Technical/Code QA).",
+            "Safety Features": "Sandboxed execution environment for generated code.",
+            "Creativity": "Low (Strict syntax adherence).",
+            "Versatility": "Specialized for programming; not a general-purpose language model.",
+            "Privacy Concerns": "Enterprise privacy compliance; zero data retention options available.",
+            "Bias and Misinformation": "Risk of generating insecure code patterns found in training data."
+          }
+        },
+        {
+          "name": "O1-preview",
+          "features": {
+            "Developer": "OpenAI",
+            "Architecture": "Transformer trained with large-scale reinforcement learning to perform Chain-of-Thought (CoT) reasoning.",
+            "Training Data": "Public data, proprietary reasoning datasets, and scientific literature.",
+            "Parameters": "Undisclosed.",
+            "Attention Mechanism": "Multi-Head Self-Attention.",
+            "Text Generation": "Yes; produces 'reasoning tokens' (hidden thoughts) before outputting visible text.",
+            "Language Translation": "Supported.",
+            "Code Generation": "Excellent; specifically optimized for complex algorithms and logic.",
+            "Image Generation": "Not Supported.",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Supported; excels at summarizing complex technical documents.",
+            "Question Answering": "State-of-the-art on complex reasoning benchmarks (PhD-level science).",
+            "Safety Features": "Reinforcement Learning for safety; capable of reasoning about safety policies in context.",
+            "Creativity": "High; capable of solving novel logic puzzles.",
+            "Versatility": "Specialized for STEM, coding, and math; slower than GPT-4o for simple tasks.",
+            "Privacy Concerns": "Standard OpenAI enterprise privacy protocols.",
+            "Bias and Misinformation": "Significantly reduced hallucinations on reasoning tasks compared to GPT-4o."
+          }
+        },
+        {
+          "name": "O1-mini",
+          "features": {
+            "Developer": "OpenAI",
+            "Architecture": "Smaller, faster Transformer optimized for STEM reasoning; distilled from larger O1 models.",
+            "Training Data": "Optimized subset of O1 training data, focusing on code and math.",
+            "Parameters": "Undisclosed.",
+            "Attention Mechanism": "Multi-Head Self-Attention.",
+            "Text Generation": "Yes; faster response time than O1-preview.",
+            "Language Translation": "Supported.",
+            "Code Generation": "Superior performance; specifically targeted at efficient code generation.",
+            "Image Generation": "Not Supported.",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Supported.",
+            "Question Answering": "High accuracy on math/code queries; lower general world knowledge than GPT-4o.",
+            "Safety Features": "Uses the same safety alignment procedures as O1-preview.",
+            "Creativity": "Moderate; focused on logic rather than creative writing.",
+            "Versatility": "Cost-effective reasoning model for developers.",
+            "Privacy Concerns": "Standard OpenAI enterprise privacy protocols.",
+            "Bias and Misinformation": "Risk of hallucinations regarding non-STEM facts due to smaller knowledge base."
+          }
+        },
+        {
+          "name": "Embedding Models",
+          "features": {
+            "Developer": "OpenAI",
+            "Architecture": "Transformer (generates semantic vector embeddings).",
+            "Training Data": "Large corpora of text to learn semantic relationships.",
+            "Parameters": "Undisclosed (Optimized for vector output).",
+            "Attention Mechanism": "Multi-Head Self-Attention.",
+            "Text Generation": "No (used for vector representation).",
+            "Language Translation": "No.",
+            "Code Generation": "No.",
+            "Image Generation": "No.",
+            "Video Generation": "No.",
+            "Summarization": "No.",
+            "Question Answering": "No (Used to power Search/QA systems).",
+            "Safety Features": "Standard data processing safeguards.",
+            "Creativity": "N/A.",
+            "Versatility": "Focused on representation tasks, not generation.",
+            "Privacy Concerns": "Standard API privacy policies apply.",
+            "Bias and Misinformation": "May reflect semantic biases in training data."
+          }
+        },
+        {
+          "name": "DALL·E 2",
+          "features": {
+            "Developer": "OpenAI",
+            "Architecture": "Encoder–decoder Transformer with CLIP-based diffusion decoder.",
+            "Training Data": "Image–text pairs (exact dataset details not specified).",
+            "Parameters": "3.5 billion.",
+            "Attention Mechanism": "Cross-attention between text and image.",
+            "Text Generation": "No.",
+            "Language Translation": "No.",
+            "Code Generation": "No.",
+            "Image Generation": "Yes (primary function).",
+            "Video Generation": "No.",
+            "Summarization": "No.",
+            "Question Answering": "No.",
+            "Safety Features": "Filters for violent, adult, or hateful content.",
+            "Creativity": "Yes (generates creative, photorealistic images).",
+            "Versatility": "Focused on text-to-image generation.",
+            "Privacy Concerns": "Users can opt out of having images used for training.",
+            "Bias and Misinformation": "Known biases in representation (e.g., gender/occupation stereotypes)."
+          }
+        },
+        {
+          "name": "DALL·E 3",
+          "features": {
+            "Developer": "OpenAI",
+            "Architecture": "Transformer (text-conditional image generation with enhanced captioning).",
+            "Training Data": "Image–text pairs, improved with descriptive synthetic captions.",
+            "Parameters": "Undisclosed.",
+            "Attention Mechanism": "Transformer self-attention layers for text-to-image generation.",
+            "Text Generation": "No.",
+            "Language Translation": "No.",
+            "Code Generation": "No.",
+            "Image Generation": "Yes (primary function with better prompt following).",
+            "Video Generation": "No.",
+            "Summarization": "No.",
+            "Question Answering": "No.",
+            "Safety Features": "Enhanced safety mitigations to prevent public figure generation and harmful content.",
+            "Creativity": "Yes (improved rendering of complex or imaginative prompts).",
+            "Versatility": "Focus on advanced text-to-image fidelity.",
+            "Privacy Concerns": "Declines requests for public figures; standard API privacy applies.",
+            "Bias and Misinformation": "Mitigation steps taken to diversify generated outputs."
+          }
+        },
+        {
+          "name": "Sora",
+          "features": {
+            "Developer": "OpenAI",
+            "Architecture": "Diffusion Transformer for video generation (spacetime patch-based).",
+            "Training Data": "Undisclosed (large-scale text-video pairs implied).",
+            "Parameters": "Undisclosed.",
+            "Attention Mechanism": "Transformer-based self-attention on compressed video patches.",
+            "Text Generation": "No.",
+            "Language Translation": "No.",
+            "Code Generation": "No.",
+            "Image Generation": "No.",
+            "Video Generation": "Yes (primary function).",
+            "Summarization": "No.",
+            "Question Answering": "No.",
+            "Safety Features": "Yes (risk assessment and mitigation included; red-teaming).",
+            "Creativity": "Yes (long-range coherence and 3D consistency in generated videos).",
+            "Versatility": "Focused on generating or editing high-fidelity video content.",
+            "Privacy Concerns": "Strict policies against generating real people or deepfakes.",
+            "Bias and Misinformation": "Safety classifiers trained to detect and refuse violations."
+          }
+        },
+        {
+          "name": "Whisper",
+          "features": {
+            "Developer": "OpenAI",
+            "Architecture": "Encoder–decoder Transformer for speech recognition.",
+            "Training Data": "Large-scale audio–transcript pairs in multiple languages (680,000 hours).",
+            "Parameters": "798 million (Large v2).",
+            "Attention Mechanism": "Multi-head self-attention (encoder–decoder setup).",
+            "Text Generation": "Yes (transcribed output from speech).",
+            "Language Translation": "Yes (speech translation tasks).",
+            "Code Generation": "No.",
+            "Image Generation": "No.",
+            "Video Generation": "No.",
+            "Summarization": "No.",
+            "Question Answering": "No.",
+            "Safety Features": "Minimal (Raw transcription model; safety depends on downstream application).",
+            "Creativity": "N/A (Fidelity to audio is the goal).",
+            "Versatility": "Focuses on accurate speech-to-text across languages.",
+            "Privacy Concerns": "Open weights available; can run locally for full privacy.",
+            "Bias and Misinformation": "Accuracy varies by language and accent."
+          }
+        }
+      ]
+    },
+    "deepseek": {
+      "name": "DeepSeek AI",
+      "image": "/images/deepseek.png",
+      "models": [
+        {
+          "name": "DeepSeek-V3",
+          "features": {
+            "Developer": "Liang Wenfeng (Founder, established DeepSeek AI in 2023)",
+            "Architecture": "Transformer-based with innovations including Multi-Head Latent Attention (MLA), DeepSeekMoE (Mixture-of-Experts) and Multi-Token Prediction (MTP); employs low-rank joint compression, dual-component key storage (contextual and rotary keys) and FP8 mixed precision training.",
+            "Training Data": "14.8 trillion high-quality tokens from diverse sources with an increased ratio of mathematical, programming, and multilingual samples; also uses advanced data preprocessing (document packing, Fill-in-the-Middle strategy, bias mitigation).",
+            "Parameters": "671B total parameters with only 37B activated per token (using a Mixture-of-Experts architecture).",
+            "Attention Mechanism": "Multi-Head Latent Attention (MLA) – compresses key-value pairs, splits keys into contextual and rotary positional components, and reduces memory overhead.",
+            "Text Generation": "Generates coherent, context-aware text using Multi-Token Prediction (MTP); supports long context windows (up to 128k tokens).",
+            "Language Translation": "Strong multilingual translation capabilities leveraging extensive multilingual training data and the optimized MLA mechanism.",
+            "Code Generation": "Excels in code generation and debugging with high benchmark scores (e.g., Pass@1 of 82.6 on HumanEval-Mul); uses advanced reasoning via MTP.",
+            "Image Generation": "Not Supported (Text-based model; video features provided by 3rd party wrappers like SendShort).",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Capable of producing concise, coherent summaries by leveraging MTP and extensive training data.",
+            "Question Answering": "Delivers accurate, contextually relevant, and logically structured answers; optimized for long-context QA with high factual recall and reasoning using MLA and MTP.",
+            "Safety Features": "Two-tiered content moderation (preemptive filtering and post-generation evaluation), bias mitigation via fine-tuning and RLHF, enterprise-grade security (RBAC, data encryption, compliance) and adversarial query protection.",
+            "Creativity": "Generates creative content (stories, poems) with robust natural language capabilities.",
+            "Versatility": "Handles a wide range of NLP tasks including text generation, code assistance, language translation, summarization, and question answering.",
+            "Privacy Concerns": "Open weights allow for local deployment, ensuring maximum data privacy.",
+            "Bias and Misinformation": "Employs dedicated bias mitigation strategies in tokenization and training, plus RLHF and content moderation to minimize biases and prevent misinformation."
+          }
+        },
+        {
+          "name": "Janus-Pro-7B",
+          "features": {
+            "Developer": "DeepSeek AI",
+            "Architecture": "Unified Transformer with decoupled visual encoding (separate encoders for understanding and generation).",
+            "Training Data": "72 million image-text pairs (balanced 1:1 ratio of real to synthetic data).",
+            "Parameters": "7 Billion.",
+            "Attention Mechanism": "Standard Transformer self-attention handling both text and visual tokens.",
+            "Text Generation": "Yes; capable of multimodal understanding and text responses.",
+            "Language Translation": "Supported via LLM backbone.",
+            "Code Generation": "Supported via LLM backbone.",
+            "Image Generation": "Yes; outperforms DALL-E 3 on specific alignment benchmarks (e.g., positional alignment).",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Supported for both text and visual inputs.",
+            "Question Answering": "Strong visual question answering (VQA) capabilities.",
+            "Safety Features": "Standard content moderation filters.",
+            "Creativity": "High; excels at following specific visual instructions.",
+            "Versatility": "Hybrid model capable of both analyzing and generating images.",
+            "Privacy Concerns": "Open weights available for local privacy.",
+            "Bias and Misinformation": "Reduced visual artifacts via synthetic training data."
+          }
+        },
+        {
+          "name": "DeepSeek-R1",
+          "features": {
+            "Developer": "DeepSeek AI.",
+            "Architecture": "Mixture-of-Experts (MoE) with Chain-of-Thought reasoning; 37B active parameters per token.",
+            "Training Data": "Multi-stage training: Cold-start data -> Reinforcement Learning (GRPO) -> Rejection Sampling.",
+            "Parameters": "671 Billion Total (37 Billion Active).",
+            "Attention Mechanism": "Multi-Head Latent Attention (MLA).",
+            "Text Generation": "Yes; generates 'thought chains' before final answer to improve accuracy.",
+            "Language Translation": "Supported.",
+            "Code Generation": "State-of-the-art; rivals proprietary models on Codeforces benchmarks.",
+            "Image Generation": "Not Supported.",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Supported; reduced hallucination in summarization tasks.",
+            "Question Answering": "Excellent; optimized for complex math and logic (97.3% on MATH-500).",
+            "Safety Features": "RL-based safety alignment; iterative rejection sampling to filter harmful outputs.",
+            "Creativity": "High logic and reasoning creativity; less focused on literary creativity.",
+            "Versatility": "Specialized for 'System 2' thinking (reasoning/planning) rather than quick chat.",
+            "Privacy Concerns": "Standard open weights license (MIT); local deployment minimizes privacy risks.",
+            "Bias and Misinformation": "Significant reduction in hallucinations due to verification steps in reasoning chain."
+          }
+        },
+        {
+          "name": "DeepSeekCoder-V2",
+          "features": {
+            "Developer": "DeepSeek AI.",
+            "Architecture": "Mixture-of-Experts (MoE).",
+            "Training Data": "Pre-trained on 6 trillion additional tokens of code and math data on top of DeepSeek-V2.",
+            "Parameters": "236 Billion Total (21 Billion Active).",
+            "Attention Mechanism": "Multi-Head Latent Attention (MLA).",
+            "Text Generation": "Supported; maintains general language capabilities alongside code specialization.",
+            "Language Translation": "Supported (338 programming languages + natural languages).",
+            "Code Generation": "Primary function; state-of-the-art open source performance.",
+            "Image Generation": "Not Supported.",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Supported.",
+            "Question Answering": "Strong performance on technical and coding queries.",
+            "Safety Features": "Standard content filtering and alignment.",
+            "Creativity": "High technical creativity (algorithm design).",
+            "Versatility": "Supports 338 programming languages and 128k context window.",
+            "Privacy Concerns": "Open weights allow local hosting for maximum privacy.",
+            "Bias and Misinformation": "Rigorous data filtering and 'Fill-in-the-Middle' training to reduce coding errors."
+          }
+        }
+      ]
+    },
+    "meta": {
+      "name": "Meta",
+      "image": "/images/meta.png",
+      "models": [
+        {
+          "name": "Code Llama-Instruct",
+          "features": {
+            "Developer": "Meta",
+            "Architecture": "A variant of Code Llama fine-tuned to better follow natural language instructions for coding tasks; based on LLaMA 2 architecture.",
+            "Training Data": "Trained on general code data along with instruction-following datasets to improve responsiveness to natural language prompts.",
+            "Parameters": "Available in sizes similar to Code Llama (e.g., 7B, 13B, etc.).",
+            "Attention Mechanism": "Inherited transformer self-attention with tuning for instruction adherence.",
+            "Text Generation": "Not primarily used for general text; focused on generating code based on instructions.",
+            "Language Translation": "Not applicable.",
+            "Code Generation": "Optimized for generating and completing code in response to natural language instructions with enhanced clarity and safety.",
+            "Image Generation": "Not supported.",
+            "Video Generation": "Not supported.",
+            "Summarization": "Not applicable.",
+            "Question Answering": "Handles coding-related queries with improved instruction-following capabilities.",
+            "Safety Features": "Enhanced safety and alignment measures to reduce harmful or incorrect code outputs.",
+            "Creativity": "Limited creativity; emphasis on accurate, instruction-compliant code generation.",
+            "Versatility": "Specialized for coding tasks with natural language instruction interpretation.",
+            "Privacy Concerns": "Open weights; no central data collection.",
+            "Bias and Misinformation": "Potential bias in code comments or variable naming based on training data."
+          }
+        },
+        {
+          "name": "Code Llama-Python",
+          "features": {
+            "Developer": "Meta",
+            "Architecture": "A variant of Code Llama fine-tuned specifically on Python code, retaining the core architecture of Code Llama and LLaMA 2.",
+            "Training Data": "Fine-tuned on Python-specific datasets extracted from GitHub and other Python repositories.",
+            "Parameters": "Available in similar sizes as Code Llama (e.g., 7B, 13B, etc.).",
+            "Attention Mechanism": "Same as Code Llama, with adjustments for Python syntax and structure.",
+            "Text Generation": "Not applicable for general text; focused on code.",
+            "Language Translation": "Not applicable.",
+            "Code Generation": "Excels in generating, completing, and debugging Python code.",
+            "Image Generation": "Not supported.",
+            "Video Generation": "Not supported.",
+            "Summarization": "Not applicable.",
+            "Question Answering": "Handles Python-specific coding queries effectively.",
+            "Safety Features": "Optimized for safe code generation in Python.",
+            "Creativity": "Limited creativity; focuses on accurate and efficient code production.",
+            "Versatility": "Highly specialized for Python programming tasks.",
+            "Privacy Concerns": "Open weights; no central data collection.",
+            "Bias and Misinformation": "Inherits biases from public Python repositories."
+          }
+        },
+        {
+          "name": "Code Llama",
+          "features": {
+            "Developer": "Meta",
+            "Architecture": "Derived from LLaMA 2; fine-tuned specifically for coding tasks with modifications to optimize code generation, completion, and debugging.",
+            "Training Data": "Trained on code-specific datasets sourced from GitHub and other code repositories.",
+            "Parameters": "Available in sizes such as 7B, 13B, 34B, and 70B.",
+            "Attention Mechanism": "Inherits transformer self-attention from LLaMA 2 with adjustments for code-specific patterns.",
+            "Text Generation": "Not the primary focus; optimized for code rather than general natural language text.",
+            "Language Translation": "Not applicable.",
+            "Code Generation": "Excels in generating, completing, and debugging code; achieves high benchmark scores on coding evaluations.",
+            "Image Generation": "Not supported.",
+            "Video Generation": "Not supported.",
+            "Summarization": "Not primarily used for summarization.",
+            "Question Answering": "Handles coding-related queries effectively.",
+            "Safety Features": "Optimized for safe code generation and evaluated internally.",
+            "Creativity": "Focused on structured code output rather than creative text generation.",
+            "Versatility": "Highly specialized for programming tasks.",
+            "Privacy Concerns": "Open weights; no central data collection.",
+            "Bias and Misinformation": "Potential bias in code comments or variable naming."
+          }
+        },
+        {
+          "name": "LLaMA 2",
+          "features": {
+            "Developer": "Meta (in partnership with Microsoft)",
+            "Architecture": "Transformer-based model with RMSNorm pre-normalization, SwiGLU activation, Rotary Positional Embeddings (RoPE), and Grouped Query Attention (GQA); extended context length to 4,000 tokens with Ghost Attention for improved dialogue consistency.",
+            "Training Data": "A mix of publicly available datasets including English CommonCrawl, C4, GitHub, Wikipedia, Gutenberg, Books3, arXiv, and Stack Exchange; trained on 2 trillion tokens with an emphasis on factual, high-quality sources.",
+            "Parameters": "Available in variants ranging from 7B to 70B parameters.",
+            "Attention Mechanism": "Enhanced transformer self-attention with RoPE and GQA.",
+            "Text Generation": "Versatile text generation for creative writing, summarization, and content expansion.",
+            "Language Translation": "Baseline translation capabilities.",
+            "Code Generation": "Not primarily focused on code (use Code Llama for that).",
+            "Image Generation": "Not Supported (Multimodal inputs not supported in base model).",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Effective summarization, particularly in English.",
+            "Question Answering": "Strong QA abilities with extended context handling.",
+            "Safety Features": "Incorporates RLHF, safety reward mechanisms, and rigorous safety evaluations including red-teaming.",
+            "Creativity": "High creativity in generating diverse forms of content such as stories and poems.",
+            "Versatility": "Highly adaptable across a broad range of NLP tasks.",
+            "Privacy Concerns": "Data filtering measures are in place to minimize privacy risks; open weights allow local control.",
+            "Bias and Misinformation": "Efforts to mitigate bias via diverse training data and fairness-driven objectives."
+          }
+        },
+        {
+          "name": "LLaMA",
+          "features": {
+            "Developer": "Meta",
+            "Architecture": "Transformer-based model with self-attention; the predecessor that inspired subsequent improvements in LLaMA 2.",
+            "Training Data": "1.4 Trillion tokens from CommonCrawl, C4, GitHub, Wikipedia, Gutenberg, and ArXiv.",
+            "Parameters": "7B, 13B, 33B, and 65B.",
+            "Attention Mechanism": "Multi-Head Self-Attention.",
+            "Text Generation": "Capable of generating coherent text for a range of NLP tasks.",
+            "Language Translation": "Supported but performance varies by language.",
+            "Code Generation": "Not primarily focused on code generation.",
+            "Image Generation": "Not supported.",
+            "Video Generation": "Not supported.",
+            "Summarization": "Can perform summarization tasks.",
+            "Question Answering": "Handles QA tasks.",
+            "Safety Features": "None; released as a research model without RLHF alignment.",
+            "Creativity": "Generates creative content, though less emphasized than in later models.",
+            "Versatility": "Versatile across various NLP applications.",
+            "Privacy Concerns": "Initial leak of weights raised concerns; otherwise standard research model privacy.",
+            "Bias and Misinformation": "Significant; model was unaligned and reflected raw dataset biases."
+          }
+        }
+      ]
+    },
+    "google": {
+      "name": "Google",
+      "image": "/images/google.webp",
+      "models": [
+        {
+          "name": "GeminiBase",
+          "features": {
+            "Developer": "Google DeepMind (following the merger of Google Brain and DeepMind, April 2023; with contributions from Sergey Brin)",
+            "Architecture": "Transformer-based multimodal model integrating text, image, audio, and video processing via a multimodal encoder, cross-modal attention, and a multimodal decoder.",
+            "Training Data": "Utilizes publicly accessible data along with inputs from Gemini Apps; specific data sources and filtering details are not fully disclosed.",
+            "Parameters": "Undisclosed (Foundational model).",
+            "Attention Mechanism": "Uses cross-modal attention to integrate independent modality representations along with multi-query attention, Flash attention, and Flash decoding to reduce memory overhead.",
+            "Text Generation": "Features highly sophisticated text generation that delivers contextually accurate and coherent outputs.",
+            "Language Translation": "Supports over 100 languages with broad dialect coverage.",
+            "Code Generation": "Capable of generating code alongside other modalities.",
+            "Image Generation": "Capable of generating high-quality images from textual descriptions.",
+            "Video Generation": "Capable of generating video outputs guided by text prompts.",
+            "Summarization": "Effective in summarizing both textual and video content for streamlined information extraction.",
+            "Question Answering": "Evaluated in domains including medical QA, though with moderate accuracy in image-based queries.",
+            "Safety Features": "Incorporates a robust safety framework with red-teaming, dynamic evaluations, and oversight by internal and external councils.",
+            "Creativity": "Demonstrates exceptional creativity by fusing multimodal inputs for innovative outputs in design, education, and content creation.",
+            "Versatility": "Extremely versatile—designed for applications in education, healthcare, content creation, programming, and more.",
+            "Privacy Concerns": "Transparency about training data is limited; concerns remain regarding data sources and potential privacy risks.",
+            "Bias and Misinformation": "Employs dynamic red-teaming and safety evaluations to mitigate bias and misinformation, though full details are not disclosed."
+          }
+        },
+        {
+          "name": "Gemini1.5",
+          "features": {
+            "Developer": "Google DeepMind",
+            "Architecture": "Utilizes a Mixture-of-Experts (MoE) approach with multiple specialized neural network 'experts' (e.g., Text Expert, Image Expert, Fusion Expert) and a Gating Network that dynamically assigns weights to each expert based on the input.",
+            "Training Data": "Built on the same data sources as GeminiBase with additional processing to support expert specialization; exact details are not fully disclosed.",
+            "Parameters": "Undisclosed (MoE architecture).",
+            "Attention Mechanism": "Incorporates cross-modal attention along with MoE to optimize processing of multimodal inputs.",
+            "Text Generation": "Generates contextually rich text output similar to GeminiBase with enhancements from expert specialization.",
+            "Language Translation": "Inherits broad language support from GeminiBase.",
+            "Code Generation": "Capable, though not its primary focus.",
+            "Image Generation": "Capable of generating and processing images as part of its multimodal design.",
+            "Video Generation": "Capable, similar to GeminiBase.",
+            "Summarization": "Provides effective summarization of text and multimedia content.",
+            "Question Answering": "Delivers competent QA performance across multiple domains.",
+            "Safety Features": "Maintains robust safety protocols with dynamic expert weighting and continuous red-teaming.",
+            "Creativity": "Enhances creative output by leveraging specialized processing from different experts.",
+            "Versatility": "Highly adaptable, with expert-driven modularity enhancing performance on diverse tasks.",
+            "Privacy Concerns": "Similar concerns as GeminiBase regarding transparency of data sources.",
+            "Bias and Misinformation": "Uses MoE and dynamic gating to potentially mitigate bias, though full mechanisms are not disclosed."
+          }
+        },
+        {
+          "name": "GeminiNano-1",
+          "features": {
+            "Developer": "Google DeepMind",
+            "Architecture": "A distilled, edge-optimized version of Gemini designed for deployment on devices with limited computational resources.",
+            "Training Data": "Derived from the same large-scale data as GeminiBase, with additional distillation to reduce size.",
+            "Parameters": "Approximately 1.8 billion parameters.",
+            "Attention Mechanism": "Uses an optimized version of the cross-modal attention mechanism with reduced computational overhead.",
+            "Text Generation": "Provides reliable text generation with a smaller model footprint.",
+            "Language Translation": "Supports multiple languages, scaled for efficiency.",
+            "Code Generation": "Capable, but not the primary focus.",
+            "Image Generation": "Maintains multimodal image generation capabilities in a lightweight form.",
+            "Video Generation": "Capable, scaled down for edge devices.",
+            "Summarization": "Offers summarization capabilities, optimized for lower resource usage.",
+            "Question Answering": "Provides basic QA functionality suitable for edge applications.",
+            "Safety Features": "Retains essential safety features, though with a simplified framework due to reduced scale.",
+            "Creativity": "Delivers creative outputs, albeit with less capacity compared to full-scale models.",
+            "Versatility": "Designed for deployment in resource-constrained environments while maintaining key multimodal functions.",
+            "Privacy Concerns": "Same as GeminiBase; training data details remain limited.",
+            "Bias and Misinformation": "Safety evaluations are applied, though mechanisms are simplified for the edge model."
+          }
+        },
+        {
+          "name": "GeminiNano-2",
+          "features": {
+            "Developer": "Google DeepMind",
+            "Architecture": "An edge-optimized variant with a moderately larger parameter count than GeminiNano-1, balancing efficiency and performance.",
+            "Training Data": "Utilizes the same large-scale data as GeminiBase with distillation processes for efficiency.",
+            "Parameters": "Approximately 3.25 billion parameters.",
+            "Attention Mechanism": "Employs an efficient cross-modal attention mechanism similar to GeminiNano-1 but with enhanced capacity.",
+            "Text Generation": "Improved text generation relative to GeminiNano-1 while still optimized for edge deployment.",
+            "Language Translation": "Supports multilingual translation, optimized for efficiency.",
+            "Code Generation": "Capable of handling code, though primarily focused on general multimodal tasks.",
+            "Image Generation": "Generates images effectively in a resource-efficient manner.",
+            "Video Generation": "Capable of video generation with a balanced performance-to-efficiency ratio.",
+            "Summarization": "Provides effective summarization with moderately enhanced capacity over GeminiNano-1.",
+            "Question Answering": "Offers reliable QA performance suitable for edge devices.",
+            "Safety Features": "Retains robust safety protocols with efficiency-oriented adaptations.",
+            "Creativity": "Delivers creative outputs within the constraints of an edge-optimized model.",
+            "Versatility": "Balances enhanced performance with resource constraints, ideal for devices with moderate capacity.",
+            "Privacy Concerns": "Information not fully disclosed, similar to other Gemini models.",
+            "Bias and Misinformation": "Applies safety and bias mitigation measures adapted for a smaller model scale."
+          }
+        },
+        {
+          "name": "GeminiUltra",
+          "features": {
+            "Developer": "Google DeepMind",
+            "Architecture": "An advanced variant of Gemini optimized for high-end tasks such as complex code generation and multimodal processing; incorporates full-scale cross-modal attention and advanced optimization techniques.",
+            "Training Data": "Based on the same diverse, large-scale dataset as GeminiBase with additional fine-tuning for high-performance tasks.",
+            "Parameters": "Undisclosed (Estimated to be the largest variant, potentially 1T+).",
+            "Attention Mechanism": "Uses full-scale cross-modal attention, multi-query attention, Flash attention, and Flash decoding to maximize efficiency and performance.",
+            "Text Generation": "Delivers highly sophisticated text generation with advanced context handling.",
+            "Language Translation": "Supports high-quality translation across multiple languages.",
+            "Code Generation": "Optimized for code generation and debugging, achieving high benchmark scores on coding tasks.",
+            "Image Generation": "Generates high-fidelity images from textual descriptions with full multimodal capacity.",
+            "Video Generation": "Capable of generating dynamic video content with advanced context and detail.",
+            "Summarization": "Excels in summarizing complex text and multimedia content.",
+            "Question Answering": "Demonstrates robust QA performance across diverse domains, including medical fields.",
+            "Safety Features": "Incorporates a comprehensive safety framework with dynamic red-teaming, governance oversight, and continuous evaluations.",
+            "Creativity": "Exhibits exceptional creativity by integrating insights from multiple modalities to produce innovative outputs.",
+            "Versatility": "Designed for high-end, enterprise-level applications requiring maximum performance and adaptability.",
+            "Privacy Concerns": "Training data details are limited, raising ongoing privacy transparency concerns.",
+            "Bias and Misinformation": "Utilizes advanced safety and bias mitigation strategies, though full details remain proprietary."
+          }
+        },
+        {
+          "name": "LaMDA",
+          "features": {
+            "Developer": "Google.",
+            "Architecture": "Decoder-only Transformer trained specifically on dialogue.",
+            "Training Data": "1.56 Trillion words (Infiniset: 50% dialogs from forums, plus Wikipedia, code, and web docs).",
+            "Parameters": "137 Billion.",
+            "Attention Mechanism": "Standard Multi-Head Self-Attention.",
+            "Text Generation": "Yes; optimized for open-ended, free-form conversation.",
+            "Language Translation": "Supported (fine-tuned for dialogue translation).",
+            "Code Generation": "Capable (12.5% of training data was code), but not primary focus.",
+            "Image Generation": "Not Supported.",
+            "Video Generation": "Not Supported.",
+            "Summarization": "Supported.",
+            "Question Answering": "Uses external information retrieval (tool use) to improve factual grounding.",
+            "Safety Features": "SSI (Sensibleness, Specificity, Interestingness) metric optimization; safety classifiers.",
+            "Creativity": "High; designed to be 'interesting' and handle open-ended topics.",
+            "Versatility": "Specialized for dialogue applications; less capable at logic/reasoning than PaLM/Gemini.",
+            "Privacy Concerns": "faced criticism regarding potential sentience claims (debunked) and data sourcing.",
+            "Bias and Misinformation": "Mitigated via 'Groundedness' metrics to reduce hallucinations."
+          }
+        }
+      ]
+    },
+    "falcon": {
+      "name": "Falcon",
+      "image": "/images/falcon.jpeg",
+      "models": [
+        {
+          "name": "Falcon-7B",
+          "features": {
+            "Developer": "TII (under the leadership of Faisal Al Bannai and ATRC)",
+            "Architecture": "Causal decoder-only Transformer with Rotary Positional Embeddings (RoPE) and multiquery attention with grouped key–value projections; employs parallelization for attention and MLP layers.",
+            "Training Data": "Pre-trained on the RefinedWeb dataset (~1,500 billion tokens) with extensive filtering and deduplication; ~84% web data and 16% curated data.",
+            "Parameters": "7 billion parameters",
+            "Attention Mechanism": "Multiquery attention with grouped key–value projections",
+            "Text Generation": "Efficient autoregressive text generation",
+            "Language Translation": "Supported (Multilingual capabilities).",
+            "Code Generation": "Capable (Trained on code and technical data).",
+            "Image Generation": "Not supported",
+            "Video Generation": "Not supported",
+            "Summarization": "Capable of summarization via autoregressive generation",
+            "Question Answering": "Handles QA tasks in the text domain",
+            "Safety Features": "Standard safety and filtering as per large-scale training",
+            "Creativity": "Generates coherent, creative text",
+            "Versatility": "General-purpose NLP",
+            "Privacy Concerns": "Prompts may be stored for debugging unless user opts out.",
+            "Bias and Misinformation": "Filtering and deduplication aim to mitigate bias"
+          }
+        },
+        {
+          "name": "Falcon-40B",
+          "features": {
+            "Developer": "TII (using 384 NVIDIA A100 GPUs, AWS cloud environment)",
+            "Architecture": "Decoder-only Transformer scaled to 40B parameters; similar design to Falcon-7B with multiquery/multigroup attention, parallel attention–MLP blocks, and ZeRO sharding.",
+            "Training Data": "Trained on approximately 1,000 billion tokens from RefinedWeb with extensive filtering; curated data is a minor fraction.",
+            "Parameters": "40 billion parameters",
+            "Attention Mechanism": "Multiquery/Multigroup Attention with Flash attention/decoding",
+            "Text Generation": "High-capacity autoregressive text generation",
+            "Language Translation": "Supported (Multilingual capabilities).",
+            "Code Generation": "Capable; improved performance over 7B due to size.",
+            "Image Generation": "Not supported",
+            "Video Generation": "Not supported",
+            "Summarization": "Effective summarization via extended context handling",
+            "Question Answering": "Strong performance due to higher capacity",
+            "Safety Features": "Enhanced via distributed training and robust filtering",
+            "Creativity": "Generates rich, context-aware outputs",
+            "Versatility": "Suited for various NLP tasks at scale",
+            "Privacy Concerns": "Prompts may be stored for debugging unless user opts out.",
+            "Bias and Misinformation": "Relies on extensive data cleaning to mitigate bias"
+          }
+        },
+        {
+          "name": "Falcon-180B",
+          "features": {
+            "Developer": "TII (trained on up to 4,096 NVIDIA A100 GPUs)",
+            "Architecture": "Causal decoder-only Transformer similar to GPT-3; uses multiquery (multigroup) attention, RoPE for positional encoding, GeLU activation, and parallel attention–MLP layers.",
+            "Training Data": "Trained on 3.5 trillion tokens using the RefinedWeb pipeline with extensive filtering, deduplication, and curated corpora; context window extended up to 8192 tokens.",
+            "Parameters": "Approximately 180 billion parameters",
+            "Attention Mechanism": "Multiquery attention with RoPE and parallel blocks",
+            "Text Generation": "Handles long-range autoregressive generation with high capacity",
+            "Language Translation": "Supported (Multilingual capabilities).",
+            "Code Generation": "Supported; competitive with specialized models.",
+            "Image Generation": "Not supported",
+            "Video Generation": "Not supported",
+            "Summarization": "Capable of summarizing long text sequences",
+            "Question Answering": "Robust QA due to large parameter count and long-context support",
+            "Safety Features": "Uses gradient clipping, z-loss, and data filtering for stability and safety",
+            "Creativity": "Generates detailed and creative text outputs",
+            "Versatility": "Well-suited for high-end, complex NLP tasks",
+            "Privacy Concerns": "Prompts may be stored for debugging unless user opts out.",
+            "Bias and Misinformation": "Employs deduplication and filtering to mitigate bias"
+          }
+        },
+        {
+          "name": "Falcon2-11B",
+          "features": {
+            "Developer": "TII",
+            "Architecture": "Decoder-only Transformer similar to Falcon-7B with parallel attention–MLP blocks; employs untied final embedding layers for increased capacity.",
+            "Training Data": "Trained on more than five trillion tokens from RefinedWeb with increased multilingual and curated content.",
+            "Parameters": "11 billion parameters",
+            "Attention Mechanism": "Standard multi-head attention with optimizations like FlashAttention-2",
+            "Text Generation": "Efficient text generation for general language tasks",
+            "Language Translation": "Enhanced multilingual support",
+            "Code Generation": "Capable of handling code due to inclusion of code data",
+            "Image Generation": "Not supported",
+            "Video Generation": "Not supported",
+            "Summarization": "Performs summarization tasks with extended context windows",
+            "Question Answering": "Provides reliable QA performance",
+            "Safety Features": "Includes standard filtering and safety optimizations",
+            "Creativity": "Generates creative text with robust language understanding",
+            "Versatility": "General-purpose with improved multilingual and domain-specific abilities",
+            "Privacy Concerns": "Prompts may be stored for debugging unless user opts out.",
+            "Bias and Misinformation": "Mitigated through extensive data cleaning and deduplication"
+          }
+        },
+        {
+          "name": "Falcon2-11B VLM",
+          "features": {
+            "Developer": "TII",
+            "Architecture": "Integrates Falcon2-11B with a frozen CLIP Vision Encoder and a two-layer multimodal projector to fuse visual and textual tokens.",
+            "Training Data": "Uses 558K image-caption pairs (e.g., from the LLaVA dataset) along with curated multimodal instruction data.",
+            "Parameters": "Based on Falcon2-11B (11B parameters) with minimal additional parameters for the projector.",
+            "Attention Mechanism": "Inherits Falcon2-11B’s attention with added handling for projected image tokens",
+            "Text Generation": "Generates text conditioned on both visual and textual inputs",
+            "Language Translation": "Not primarily focused on translation",
+            "Code Generation": "Not applicable",
+            "Image Generation": "Processes and integrates image data as 'soft tokens'",
+            "Video Generation": "Not supported",
+            "Summarization": "Capable of summarizing multimodal content",
+            "Question Answering": "Optimized for image-grounded QA and dialogue",
+            "Safety Features": "Retains safety measures from Falcon2-11B with additional multimodal alignment",
+            "Creativity": "Enables creative multimodal outputs",
+            "Versatility": "Designed for multimodal applications such as image-based dialogue",
+            "Privacy Concerns": "Prompts may be stored for debugging unless user opts out.",
+            "Bias and Misinformation": "Applies similar data filtering as Falcon2-11B, with added multimodal considerations"
+          }
+        },
+        {
+          "name": "Falcon3-1B",
+          "features": {
+            "Developer": "TII",
+            "Architecture": "Decoder-only Transformer sharing the Falcon3 architecture; smaller scale with approximately 1 billion parameters.",
+            "Training Data": "Trained on a curated subset (less than 100 GT) of high-quality text from web, code, and STEM sources.",
+            "Parameters": "Approximately 1 billion parameters",
+            "Attention Mechanism": "Standard self-attention similar to the Falcon3 series",
+            "Text Generation": "Generates text efficiently with a low parameter count",
+            "Language Translation": "Not specifically detailed",
+            "Code Generation": "Capable but less powerful compared to larger models",
+            "Image Generation": "Not supported",
+            "Video Generation": "Not supported",
+            "Summarization": "Performs basic summarization",
+            "Question Answering": "Provides basic QA capabilities",
+            "Safety Features": "Standard safety measures adjusted for smaller scale",
+            "Creativity": "Generates creative text within limited capacity",
+            "Versatility": "Optimized for efficiency in lightweight applications",
+            "Privacy Concerns": "Prompts may be stored for debugging unless user opts out.",
+            "Bias and Misinformation": "Limited due to smaller training data scale"
+          }
+        },
+        {
+          "name": "Falcon3-3B-Base",
+          "features": {
+            "Developer": "TII",
+            "Architecture": "Decoder-only Transformer with 22 layers, SwiGLU activation; supports up to 32K tokens and employs teacher–student distillation from Falcon3-7B.",
+            "Training Data": "Trained on under 100 GT of high-quality text from web, code, and scientific sources.",
+            "Parameters": "Approximately 3 billion parameters",
+            "Attention Mechanism": "Standard self-attention with adaptations for extended context",
+            "Text Generation": "General-purpose text generation with extended context support",
+            "Language Translation": "Capable across multiple languages",
+            "Code Generation": "Handles code to an extent via distillation",
+            "Image Generation": "Not supported",
+            "Video Generation": "Not supported",
+            "Summarization": "Efficient summarization with extended context",
+            "Question Answering": "Good QA performance with distilled language understanding",
+            "Safety Features": "Maintains safety protocols from the Falcon3 teacher model",
+            "Creativity": "Generates creative outputs with a compact parameter footprint",
+            "Versatility": "Versatile across various text-based applications",
+            "Privacy Concerns": "Prompts may be stored for debugging unless user opts out.",
+            "Bias and Misinformation": "Mitigated through data filtering and distillation"
+          }
+        },
+        {
+          "name": "Falcon3-Mamba-7B-Base",
+          "features": {
+            "Developer": "TII",
+            "Architecture": "State Space Language Model (SSLM) using state-space layers ('Mamba'); 64 layers, approximately 7.27B parameters, supporting 32K context length.",
+            "Training Data": "Trained on a diverse corpus including web, code, and STEM domains with rigorous filtering.",
+            "Parameters": "Approximately 7.27 billion parameters",
+            "Attention Mechanism": "State-space based approach for efficient long-context processing",
+            "Text Generation": "Efficient text generation with nearly constant inference cost over long sequences",
+            "Language Translation": "Not primarily focused on translation",
+            "Code Generation": "Capable of generating text/code with efficiency gains from state-space layers",
+            "Image Generation": "Not supported",
+            "Video Generation": "Not supported",
+            "Summarization": "Handles long-context summarization effectively",
+            "Question Answering": "Provides strong QA with extended context support",
+            "Safety Features": "Utilizes stabilization methods (e.g., RMSNorm) and robust filtering",
+            "Creativity": "Generates creative outputs efficiently",
+            "Versatility": "Adapted for STEM and multilingual tasks with efficient long-range dependency handling",
+            "Privacy Concerns": "Prompts may be stored for debugging unless user opts out.",
+            "Bias and Misinformation": "Filtered through high-quality curated data"
+          }
+        },
+        {
+          "name": "Falcon3-7B-Base",
+          "features": {
+            "Developer": "TII",
+            "Architecture": "Decoder-only Transformer with 28 layers, 256 head dimension, and SwiGLU activation; supports up to 32K tokens using FlashAttention-3.",
+            "Training Data": "Trained on 14 trillion tokens covering web, STEM, and programming data, with extensive cleaning.",
+            "Parameters": "Approximately 7 billion parameters",
+            "Attention Mechanism": "Standard Transformer self-attention optimized with FlashAttention-3",
+            "Text Generation": "Robust text generation with extended context handling",
+            "Language Translation": "Handles multilingual content effectively",
+            "Code Generation": "Performs well on coding tasks with distilled knowledge",
+            "Image Generation": "Not supported",
+            "Video Generation": "Not supported",
+            "Summarization": "Excels in summarization due to extended context support",
+            "Question Answering": "Strong QA performance on complex tasks",
+            "Safety Features": "Incorporates safety measures from large-scale training and filtering",
+            "Creativity": "Generates high-quality creative and analytical outputs",
+            "Versatility": "Versatile across various applications including STEM and code",
+            "Privacy Concerns": "Prompts may be stored for debugging unless user opts out.",
+            "Bias and Misinformation": "Mitigated via advanced data cleaning and deduplication"
+          }
+        },
+        {
+          "name": "Falcon3-10B-Base",
+          "features": {
+            "Developer": "TII",
+            "Architecture": "Upscaled version of Falcon3-7B built by duplicating layers to form a deeper network; supports 40 layers and 32K context.",
+            "Training Data": "Trained on 2 trillion tokens of high-quality, domain-specific data with enhanced cleaning and augmentation for STEM and reasoning tasks.",
+            "Parameters": "Approximately 10 billion parameters",
+            "Attention Mechanism": "Enhanced self-attention with FlashAttention-3 and deeper network structure",
+            "Text Generation": "Delivers improved text generation and deep reasoning capabilities",
+            "Language Translation": "Effective multilingual support with extended context",
+            "Code Generation": "Robust performance on coding benchmarks",
+            "Image Generation": "Not supported",
+            "Video Generation": "Not supported",
+            "Summarization": "Excels in summarizing complex, long-form text",
+            "Question Answering": "Achieves high accuracy on QA and reasoning benchmarks",
+            "Safety Features": "Includes advanced safety measures from fine-tuning and regularization",
+            "Creativity": "Generates creative outputs with enhanced depth",
+            "Versatility": "Optimized for high-end applications in math, science, and code",
+            "Privacy Concerns": "Prompts may be stored for debugging unless user opts out.",
+            "Bias and Misinformation": "Mitigated through domain-specific data curation and cleaning"
+          }
+        }
+      ]
+    },
+    "alibaba": {
+      "name": "Alibaba",
+      "image": "/images/qwen1.png",
+      "models": [
+        {
+          "name": "Qwen-Base",
+          "features": {
+            "Developer": "Alibaba Cloud (cloud computing division of Alibaba Group)",
+            "Architecture": "Modified decoder-only Transformer inspired by LLaMA with untied embedding/output projections, RMSNorm, Rotary Positional Embedding (RoPE), and SwiGLU activation. Also employs NTK-aware interpolation and dynamic position scaling for extended context.",
+            "Training Data": "Collected from web documents, encyclopedias, books, and code repositories; multilingual data is filtered, deduplicated, and balanced.",
+            "Parameters": "Multiple sizes available (e.g., 1.8B, 7B, 14B) – specific size depends on the configuration.",
+            "Attention Mechanism": "Standard multi-head self-attention enhanced with modifications (e.g., MoE layers, Flash Attention, LogN-scaling, windowed attention).",
+            "Text Generation": "Generates coherent, contextually rich text across various domains.",
+            "Language Translation": "Supports multilingual translation via cross-lingual transfer learning.",
+            "Code Generation": "Not primarily focused on code generation.",
+            "Image Generation": "Not applicable in the base model.",
+            "Video Generation": "Not applicable.",
+            "Summarization": "Strong summarization abilities with extended context handling.",
+            "Question Answering": "Performs competently on QA tasks across diverse topics.",
+            "Safety Features": "Incorporates RLHF, fairness-aware objectives, and robust data filtering to mitigate bias.",
+            "Creativity": "Capable of creative text generation across various applications.",
+            "Versatility": "Highly versatile for general NLP tasks.",
+            "Privacy Concerns": "Adheres to advanced data encryption and global privacy standards.",
+            "Bias and Misinformation": "Mitigated through data balancing, deduplication, and fairness-driven training."
+          }
+        },
+        {
+          "name": "Qwen-Chat",
+          "features": {
+            "Developer": "Alibaba Cloud",
+            "Architecture": "Based on Qwen-Base with additional fine-tuning (supervised and RLHF) to optimize for conversational, interactive tasks.",
+            "Training Data": "Fine-tuned on high-quality conversational and instruction datasets to enhance dialogue quality.",
+            "Parameters": "Uses the same base size as Qwen-Base for the given variant.",
+            "Attention Mechanism": "Inherits the attention mechanism from Qwen-Base.",
+            "Text Generation": "Optimized for generating engaging, human-like conversational responses with high coherence.",
+            "Language Translation": "Inherits multilingual capabilities from Qwen-Base.",
+            "Code Generation": "Not the focus for Qwen-Chat.",
+            "Image Generation": "Not supported.",
+            "Video Generation": "Not supported.",
+            "Summarization": "Capable of summarizing conversational contexts.",
+            "Question Answering": "Enhanced for interactive QA with improved instruction adherence.",
+            "Safety Features": "Employs enhanced safety and alignment measures through RLHF specialized for dialogue.",
+            "Creativity": "Generates creative and engaging conversational outputs.",
+            "Versatility": "Tailored specifically for chat and dialogue applications.",
+            "Privacy Concerns": "Policy states no storage of chat interactions.",
+            "Bias and Misinformation": "Mitigated through careful fine-tuning and RLHF."
+          }
+        },
+        {
+          "name": "Code-Qwen",
+          "features": {
+            "Developer": "Alibaba Cloud",
+            "Architecture": "Based on Qwen-Base with modifications to better handle programming syntax and code structure.",
+            "Training Data": "Fine-tuned on extensive programming datasets including GitHub repositories, competitive programming solutions, and documentation.",
+            "Parameters": "Varies with the base model size (e.g., 7B or 14B variants)",
+            "Attention Mechanism": "Inherits the base attention mechanism with adjustments for code representation.",
+            "Text Generation": "Not used for general text; optimized specifically for generating, completing, and debugging code.",
+            "Language Translation": "Not applicable.",
+            "Code Generation": "Excels in producing accurate, syntactically correct code and debugging output.",
+            "Image Generation": "Not supported.",
+            "Video Generation": "Not supported.",
+            "Summarization": "Not applicable.",
+            "Question Answering": "Performs well on code-related queries and technical explanations.",
+            "Safety Features": "Optimized to prevent harmful or insecure code output.",
+            "Creativity": "Focused on structured code output rather than creative text.",
+            "Versatility": "Highly specialized for programming tasks.",
+            "Privacy Concerns": "Follows Alibaba's privacy protocols.",
+            "Bias and Misinformation": "Mitigation strategies are applied during fine-tuning."
+          }
+        },
+        {
+          "name": "Math-Qwen",
+          "features": {
+            "Developer": "Alibaba Cloud",
+            "Architecture": "Based on Qwen-Base with specialized modifications for mathematical reasoning and problem-solving.",
+            "Training Data": "Fine-tuned on mathematical datasets and STEM resources to optimize performance in math-related tasks.",
+            "Parameters": "Varies with the base model size (e.g., 7B or 14B variants)",
+            "Attention Mechanism": "Inherits the base attention mechanism with enhancements for numerical and logical tasks.",
+            "Text Generation": "Generates text with a focus on precise mathematical explanations and problem-solving.",
+            "Language Translation": "Not applicable.",
+            "Code Generation": "Not applicable.",
+            "Image Generation": "Not supported.",
+            "Video Generation": "Not supported.",
+            "Summarization": "Capable of summarizing technical and mathematical content concisely.",
+            "Question Answering": "Excels in mathematical QA and technical problem-solving benchmarks.",
+            "Safety Features": "Mitigates risks of propagating incorrect mathematical information through specialized fine-tuning.",
+            "Creativity": "Emphasis is on correctness and precision over creative language generation.",
+            "Versatility": "Highly specialized for mathematics and STEM applications.",
+            "Privacy Concerns": "Adheres to Alibaba's privacy standards.",
+            "Bias and Misinformation": "Mitigated through targeted data curation and fine-tuning."
+          }
+        }
+      ]
+    }
+  }
+}

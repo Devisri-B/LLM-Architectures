@@ -1,0 +1,488 @@
+/* ExplorerPage.css - Enhanced UI Version */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --base-font-size: 16px; /* Standard base for better density */
+  --background: #f8f9fa; /* Light neutral background */
+  --surface: #ffffff;   /* Card/Container background */
+  --text-primary: #1a1a1a; /* Very dark grey for high contrast text */
+  --text-secondary: #555; /* Medium grey for less important text */
+  --text-muted: #888; /* Lighter grey for hints */
+  --primary: #0052cc;   /* A slightly deeper, more corporate blue */
+  --primary-hover: #0041a3; /* Darker blue for hover */
+  --primary-light: #e6f0ff; /* Light blue for backgrounds/highlights */
+  --secondary: #dee2e6; /* Lighter grey for borders */
+  --accent-danger: #d93025; /* Standard red for errors/warnings */
+  --accent-success: #1e8e3e; /* Green for success states */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --transition-fast: all 0.15s ease-in-out;
+  --transition-normal: all 0.25s ease-in-out;
+  --header-height: 64px; /* Slightly taller header */
+}
+
+body {
+  font-family: var(--font-family-sans);
+  font-size: var(--base-font-size);
+  background-color: var(--background);
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Utility --- */
+.Loading, .Error, .InfoMessage {
+    text-align: center;
+    padding: 3rem 1rem;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    background-color: var(--surface);
+    border-radius: var(--radius-md);
+    margin: 2rem auto;
+    max-width: 600px;
+    box-shadow: var(--shadow-sm);
+}
+.Error {
+    color: var(--accent-danger);
+    border-left: 4px solid var(--accent-danger);
+}
+
+/* --- Header --- */
+.Header {
+  background: var(--surface);
+  padding: 0 2rem; /* More padding */
+  box-shadow: var(--shadow-sm); /* Subtle shadow */
+  border-bottom: 1px solid var(--secondary);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.Header__Title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+.Header__Title:hover {
+  opacity: 0.8;
+}
+
+.Header__Nav {
+  display: flex;
+  gap: 1.5rem; /* Consistent gap */
+}
+
+.Header__NavLink {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  padding: 0.5rem 0;
+  position: relative;
+  font-size: 0.95rem;
+}
+.Header__NavLink::after { /* Underline effect */
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background-color: var(--primary);
+    transition: all 0.3s ease-in-out;
+}
+.Header__NavLink:hover::after {
+    width: 100%;
+    left: 0;
+}
+.Header__NavLink:hover {
+  color: var(--text-primary);
+}
+
+/* --- Main Content --- */
+.MainContent {
+  padding: calc(var(--header-height) + 2rem) 2rem 2rem; /* More padding */
+  max-width: 1300px; /* Wider max width */
+  margin: 0 auto;
+  min-height: calc(100vh - var(--header-height));
+  box-sizing: border-box;
+}
+
+/* --- Breadcrumbs --- */
+.Breadcrumbs {
+  margin-bottom: 2rem; /* More space below */
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.Breadcrumbs__Link {
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  font-weight: 500;
+}
+.Breadcrumbs__Link:hover {
+  text-decoration: underline;
+  color: var(--primary-hover);
+}
+
+.Breadcrumbs__Separator {
+  margin: 0 0.6rem;
+  user-select: none;
+}
+
+.Breadcrumbs__Current {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* --- Page Titles --- */
+.PageTitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+}
+
+/* --- Grid Layout --- */
+.Grid {
+  display: grid;
+  /* Increased minmax for slightly larger cards */
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.75rem; /* Increased gap */
+  margin-bottom: 2rem;
+}
+
+/* --- Card --- */
+.Card {
+  background: var(--surface);
+  border-radius: var(--radius-lg); /* Larger radius */
+  padding: 1.5rem; /* More padding */
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.Card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: #cde; /* Subtle highlight */
+}
+
+.Card__Image {
+  width: 100%;
+  max-width: 120px; /* Control logo max size */
+  height: 80px; /* Fixed height */
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.25rem; /* More space below image */
+  background-color: #fff;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.Card__Title {
+  font-size: 1.15rem; /* Slightly larger title */
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+/* --- Button --- */
+.Button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem; /* Larger padding */
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: var(--transition-fast);
+  margin: 0.5rem 0.25rem;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.5;
+  box-shadow: var(--shadow-sm);
+}
+
+.Button:hover {
+  background: var(--primary-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+.Button:active {
+    transform: translateY(0);
+}
+
+.Button--secondary {
+  background: var(--surface);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.Button--secondary:hover {
+   background: var(--primary-light);
+   border-color: var(--primary-hover);
+   color: var(--primary-hover);
+   box-shadow: var(--shadow-sm);
+}
+
+/* --- Forms & Selections --- */
+.FormSection {
+  background: var(--surface);
+  padding: 2rem; /* More padding */
+  border-radius: var(--radius-lg);
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--secondary);
+}
+
+.FormSection h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem; /* More space */
+  border-bottom: 1px solid var(--secondary);
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.CheckboxGrid {
+    display: grid;
+    /* Adjust columns for better fit */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem 1.5rem; /* Row and column gap */
+    margin-bottom: 1.5rem;
+}
+
+.CheckboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* More gap */
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: color var(--transition-fast);
+}
+.CheckboxLabel:hover {
+    color: var(--primary);
+}
+
+.CheckboxLabel input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: var(--primary);
+  width: 18px; /* Slightly larger */
+  height: 18px;
+  margin-right: 0.25rem;
+}
+
+.SelectAllLabel {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--secondary);
+  display: block; /* Ensure it takes full width */
+}
+
+/* --- Details View --- */
+.DetailsOutput {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #fdfdff; /* Slightly off-white background */
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.DetailsOutput__Item {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eef; /* Lighter border */
+}
+.DetailsOutput__Item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.DetailsOutput__Item strong {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase; /* Style label */
+}
+
+/* --- Comparison View --- */
+.CompareOutput h3 { /* Title inside the output box */
+  padding: 1.5rem 2rem;
+  margin: 0;
+  border-bottom: 1px solid var(--secondary);
+  font-size: 1.3rem;
+  font-weight: 600;
+  flex-shrink: 0; /* Prevent title from shrinking */
+}
+.CompareOutput h3 { /* Title inside the output box */
+  padding: 1.5rem 2rem;
+  margin: 0;
+  border-bottom: 1px solid var(--secondary);
+  font-size: 1.3rem;
+  font-weight: 600;
+  flex-shrink: 0; /* Prevent title from shrinking */
+}
+.CompareOutput__TableWrapper {
+  padding: 0rem; /* Remove padding if table handles it */
+  overflow-x: auto; /* <<< IMPORTANT: Allows horizontal scrolling of the table */
+  flex-grow: 1; /* Allow table wrapper to fill remaining space */
+  max-width: 100%; /* Needed for overflow-x */
+}
+
+.CompanyGroup {
+  margin-bottom: 2rem;
+}
+
+.CompanyGroup h4 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.ModelCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.ModelCard {
+  background: var(--surface);
+  padding: 0.6rem 1.2rem; /* More padding */
+  border: 1px solid var(--secondary);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: var(--transition-normal);
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+}
+
+.ModelCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-light);
+  background-color: var(--primary-light);
+}
+
+.ModelCard--selected {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+  font-weight: 600;
+  box-shadow: none;
+}
+.ModelCard--selected:hover {
+    background: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+/* --- Comparison Table --- */
+.ComparisonTable {
+  border-collapse: collapse;
+  width: 100%; /* Make table take full width *of its container* */
+  /* Add min-width if needed to force scrollbar sooner */
+  /* min-width: 800px; */
+}
+
+
+.ComparisonTable th,
+.ComparisonTable td {
+  border: none; /* Remove default borders */
+  border-bottom: 1px solid var(--secondary); /* Use bottom borders */
+  padding: 1rem 1.5rem; /* More padding */
+  text-align: left;
+  vertical-align: top;
+}
+
+.ComparisonTable th {
+  background: #f8f9fa; /* Subtle header background */
+  color: var(--text-secondary);
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  z-index: 10; /* Ensure header stays above content */
+  border-bottom-width: 2px; /* Thicker bottom border for header */
+}
+.ComparisonTable td:first-child,
+.ComparisonTable th:first-child { /* Style feature column */
+    font-weight: 500;
+    color: var(--text-primary);
+    border-right: 1px solid var(--secondary);
+}
+
+.ComparisonTable tr:last-child td {
+    border-bottom: none; /* Remove border on last row */
+}
+
+.ComparisonTable tr:hover td { /* Subtle row hover */
+    background-color: #f1f3f5;
+}
+
+
+.ComparisonTable td .DiagramWrapper {
+   padding: 0.5rem;
+   max-width: 250px; /* Larger diagrams in table */
+   margin: 0 auto; /* Center if smaller */
+   border-color: #eee;
+}
+
+/* --- Diagram Wrapper --- */
+.DiagramWrapper {
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid var(--secondary);
+  border-radius: var(--radius-md);
+  background: white;
+  overflow: auto; /* Ensure scrollbars appear if needed */
+  max-width: 100%;
+  box-sizing: border-box;
+  box-shadow: var(--shadow-sm);
+}
+
+.DiagramWrapper svg,
+.DiagramWrapper img,
+.DiagramWrapper canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* --- Back Buttons --- */
+.BackButtonContainer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--secondary);
+}
