@@ -2,6 +2,7 @@
   "name": "my-llm-model-explorer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Devisri-B.github.io/LLM-Architectures",
   "dependencies": {
     "@craco/craco": "^5.9.0",
     "@testing-library/dom": "^10.4.0",
@@ -14,10 +15,15 @@
     "reactflow": "^11.11.4",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test",,
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
     "eject": "react-scripts eject"
   },
   "jest": {
