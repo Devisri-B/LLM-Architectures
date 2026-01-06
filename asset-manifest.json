@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/LLM-Architectures/static/css/main.e687fe45.css",
+    "main.js": "/LLM-Architectures/static/js/main.c97bf696.js",
+    "static/js/453.4620e664.chunk.js": "/LLM-Architectures/static/js/453.4620e664.chunk.js",
+    "index.html": "/LLM-Architectures/index.html",
+    "main.e687fe45.css.map": "/LLM-Architectures/static/css/main.e687fe45.css.map",
+    "main.c97bf696.js.map": "/LLM-Architectures/static/js/main.c97bf696.js.map",
+    "453.4620e664.chunk.js.map": "/LLM-Architectures/static/js/453.4620e664.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e687fe45.css",
+    "static/js/main.c97bf696.js"
+  ]
+}
