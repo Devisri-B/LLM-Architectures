@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import './ExplorerPage.css';
 
 
-import CodexArchitecture from './architectures/Codex';
+import CodexArchitecture from './architectures/CodexArchitecture';
 import SoraArchitecture from './architectures/SoraArchitecture';
 import DeepSeekCoderV2Architecture from './architectures/DeepSeekCoderV2Architecture';
 import LlamaPythonArchitecture from './architectures/LlamaPythonArchitecture';
@@ -395,23 +395,26 @@ const ExplorerPage = () => {
     // --- Breadcrumb Management ---
     const updateBreadcrumbs = useCallback((targetView, companyKey = currentCompanyKey, modelName = currentModelName) => {
       const homeCrumb = { label: "Home", onClick: () => { setView("home"); setCurrentCompanyKey(null); setCurrentModelName(null); } };
-      let newBreadcrumbs = [homeCrumb];
+      let newBreadcrumbs = [];
       const company = companies[companyKey];
 
       switch (targetView) {
         case "models":
+          newBreadcrumbs.push(homeCrumb);
           if (company) newBreadcrumbs.push({ label: company.name });
           break;
         case "details":
+          newBreadcrumbs.push(homeCrumb);
           if (company) newBreadcrumbs.push({ label: company.name, onClick: () => { setView("models"); setCurrentCompanyKey(companyKey); setCurrentModelName(null); } });
           if (modelName) newBreadcrumbs.push({ label: modelName });
           break;
         case "compare":
+          newBreadcrumbs.push(homeCrumb);
           newBreadcrumbs.push({ label: "Compare Models" });
           break;
         case "home":
         default:
-          // Just the home crumb
+          // No breadcrumbs on home view
           break;
       }
       setBreadcrumbs(newBreadcrumbs);
