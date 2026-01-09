@@ -89,9 +89,9 @@ body {
 }
 
 .Header__NavLink {
-  color: var(--text-secondary);
+  color: var(--primary);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: var(--transition-normal);
   padding: 0.5rem 0;
@@ -167,8 +167,22 @@ body {
   display: grid;
   /* Increased minmax for slightly larger cards */
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1.75rem; /* Increased gap */
+  gap: 1rem; /* Reduced gap for tighter spacing */
   margin-bottom: 2rem;
+}
+
+/* Center align second row of company grid */
+#company-grid {
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+#company-grid .Card:nth-child(n+5) {
+  grid-column: span 1;
+}
+
+#company-grid .Card:nth-child(5) {
+  grid-column: 2;
 }
 
 /* --- Card --- */
