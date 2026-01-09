@@ -167,18 +167,13 @@ body {
   display: grid;
   /* Increased minmax for slightly larger cards */
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1rem; /* Reduced gap for tighter spacing */
+  gap: 1.75rem; /* Increased gap */
   margin-bottom: 2rem;
 }
 
 /* Center align second row of company grid */
 #company-grid {
   grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-}
-
-#company-grid .Card:nth-child(n+5) {
-  grid-column: span 1;
 }
 
 #company-grid .Card:nth-child(5) {
