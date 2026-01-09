@@ -89,7 +89,7 @@ body {
 }
 
 .Header__NavLink {
-  color: var(--primary);
+  color: var(--text-secondary);
   text-decoration: none;
   font-weight: 500;
   cursor: pointer;
@@ -113,7 +113,7 @@ body {
     left: 0;
 }
 .Header__NavLink:hover {
-  color: var(--primary-hover);
+  color: var(--text-primary);
 }
 
 /* --- Main Content --- */
@@ -169,20 +169,6 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1.75rem; /* Increased gap */
   margin-bottom: 2rem;
-}
-
-/* Center align second row of company grid */
-#company-grid {
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-}
-
-#company-grid .Card:nth-child(n+5) {
-  grid-column: span 1;
-}
-
-#company-grid .Card:nth-child(5) {
-  grid-column: 2;
 }
 
 /* --- Card --- */
