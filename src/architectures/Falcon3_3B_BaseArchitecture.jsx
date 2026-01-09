@@ -3,14 +3,14 @@ import ReactFlow, { MiniMap, Controls, Background, useNodesState, useEdgesState 
 import 'reactflow/dist/style.css';
 
 const initialNodes = [
-  { id: '1', position: { x: 250, y: 0 }, data: { label: 'Input: 32k Tokens' }, style: { background: '#fff', border: '1px solid #333' } },
+  { id: '1', position: { x: 250, y: 0 }, data: { label: 'Input: 8k - 32k Tokens' }, style: { background: '#fff', border: '1px solid #333' } },
   
   // Distillation Process
-  { id: '2', position: { x: 250, y: 80 }, data: { label: 'Teacher-Student Distillation\n[Learned from Falcon-7B]' }, style: { background: '#ffccbc', border: '1px solid #bf360c' } },
+  { id: '2', position: { x: 250, y: 80 }, data: { label: 'Knowledge Distillation\n[Pruned from Falcon3-7B-Base]' }, style: { background: '#ffccbc', border: '1px solid #bf360c' } },
 
   // 3B Block
   { id: '3', position: { x: 150, y: 160 }, data: { label: 'Falcon 3 Block (22 Layers)' }, style: { width: 500, height: 280, background: 'rgba(255, 243, 224, 0.5)', border: '1px dashed #e65100' }, type: 'group' },
-  { id: '3a', position: { x: 50, y: 40 }, parentNode: '3', data: { label: 'Scaled Attention (22 Layers)' }, style: { background: '#fff', width: 400 } },
+  { id: '3a', position: { x: 50, y: 40 }, parentNode: '3', data: { label: 'GQA [12 Query Heads : 4 KV Heads]' }, style: { background: '#fff', width: 400 } },
   { id: '3b', position: { x: 50, y: 110 }, parentNode: '3', data: { label: 'SwiGLU MLP' }, style: { background: '#ffe0b2', width: 400 } },
   { id: '3c', position: { x: 50, y: 180 }, parentNode: '3', data: { label: 'RMSNorm' }, style: { background: '#fff', width: 400 } },
 

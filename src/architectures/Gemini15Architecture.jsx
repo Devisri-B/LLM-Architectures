@@ -11,17 +11,17 @@ import 'reactflow/dist/style.css';
 
 
 const initialNodes = [
-  // 1. Natively Multimodal Input (Strictly from text)
+  // 1. Natively Multimodal Input
   { id: '1', position: { x: 250, y: 0 }, data: { label: 'Natively Multimodal Input\n(Text, Code, Images, Audio, Video)' }, style: { background: '#fff', border: '1px solid #333', width: 280 } },
   
-  // 2. Efficient Attention (Replaces "Ring Attention" based on your text)
+  // 2. Efficient Attention 
   { id: '2', position: { x: 250, y: 80 }, data: { label: 'Efficient Attention Mechanisms\n(e.g., Multi-Query Attention)\n[Handles 1M+ Context]' }, style: { background: '#e1bee7', border: '1px solid #7b1fa2', width: 300 } },
 
   // 3. The MoE Transformer (Core Innovation)
   { id: '3', position: { x: 200, y: 160 }, data: { label: 'Gemini 1.5 Transformer (MoE)' }, style: { width: 400, height: 350, background: 'rgba(232, 245, 233, 0.5)', border: '1px dashed #2e7d32' }, type: 'group' },
   { id: '3a', position: { x: 50, y: 30 }, parentNode: '3', data: { label: 'Learned Routing Function\n[Interleaves Data types]' }, style: { background: '#fff', width: 300 } },
   
-  // 4. Multimodal Experts (Restored to show "Natively Multimodal" capability)
+  // 4. Multimodal Experts 
   { id: '3b', position: { x: 20, y: 100 }, parentNode: '3', data: { label: 'Text/Code Expert' }, style: { background: '#c8e6c9', width: 100, fontSize: '11px' } },
   { id: '3c', position: { x: 135, y: 100 }, parentNode: '3', data: { label: 'Vision Expert' }, style: { background: '#c8e6c9', width: 100, fontSize: '11px' } },
   { id: '3d', position: { x: 250, y: 100 }, parentNode: '3', data: { label: 'Audio/Video Expert' }, style: { background: '#c8e6c9', width: 110, fontSize: '11px' } },

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import './ExplorerPage.css';
 
 
-import CodexArchitecture from './architectures/Codex';
+import CodexArchitecture from './architectures/CodexArchitecture';
 import SoraArchitecture from './architectures/SoraArchitecture';
 import DeepSeekCoderV2Architecture from './architectures/DeepSeekCoderV2Architecture';
 import LlamaPythonArchitecture from './architectures/LlamaPythonArchitecture';
@@ -37,7 +37,7 @@ import GPT1 from './architectures/GPT-1';
 import GPT2 from './architectures/GPT-2';
 import GPT3 from './architectures/GPT-3';
 import GPT35 from './architectures/GPT-3.5';
-import GPT4 from './architectures/GPT-4';
+import GPT4 from './architectures/GPT-4Architecture';
 import GPT4o from './architectures/GPT-4o';
 import GPTo1Mini from './architectures/GPT-o1-mini';
 import GPTo1Preview from './architectures/GPT-o1-preview';

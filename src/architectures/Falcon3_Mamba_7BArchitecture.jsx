@@ -3,7 +3,7 @@ import ReactFlow, { MiniMap, Controls, Background, useNodesState, useEdgesState 
 import 'reactflow/dist/style.css';
 
 const initialNodes = [
-  { id: '1', position: { x: 250, y: 0 }, data: { label: 'Input: Long Sequence (up to 8k)' }, style: { background: '#fff', border: '1px solid #333' } },
+  { id: '1', position: { x: 250, y: 0 }, data: { label: 'Input: Long Sequence (up to 32k)' }, style: { background: '#fff', border: '1px solid #333' } },
   
   // Untied Embeddings
   { id: '2', position: { x: 250, y: 80 }, data: { label: 'Untied Input Embeddings' }, style: { background: '#e1bee7', border: '1px solid #8e24aa' } },
