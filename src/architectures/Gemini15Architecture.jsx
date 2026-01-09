@@ -11,22 +11,23 @@ import 'reactflow/dist/style.css';
 
 
 const initialNodes = [
-  { id: '1', position: { x: 250, y: 0 }, data: { label: 'Input: 1M+ Token Context\n(Video/Code/Text)' }, style: { background: '#fff', border: '1px solid #333', width: 250 } },
+  // 1. Natively Multimodal Input (Strictly from text)
+  { id: '1', position: { x: 250, y: 0 }, data: { label: 'Natively Multimodal Input\n(Text, Code, Images, Audio, Video)' }, style: { background: '#fff', border: '1px solid #333', width: 280 } },
   
-  // Long Context Mechanism
-  { id: '2', position: { x: 250, y: 80 }, data: { label: 'Ring Attention\n[Distributed Blockwise Computation]' }, style: { background: '#e1bee7', border: '1px solid #7b1fa2', width: 280 } },
+  // 2. Efficient Attention (Replaces "Ring Attention" based on your text)
+  { id: '2', position: { x: 250, y: 80 }, data: { label: 'Efficient Attention Mechanisms\n(e.g., Multi-Query Attention)\n[Handles 1M+ Context]' }, style: { background: '#e1bee7', border: '1px solid #7b1fa2', width: 300 } },
 
-  // MoE Stack
-  { id: '3', position: { x: 200, y: 160 }, data: { label: 'Gemini 1.5 MoE Transformer' }, style: { width: 350, height: 350, background: 'rgba(232, 245, 233, 0.5)', border: '1px dashed #2e7d32' }, type: 'group' },
-  { id: '3a', position: { x: 50, y: 30 }, parentNode: '3', data: { label: 'Input Router / Gating' }, style: { background: '#fff', width: 250 } },
+  // 3. The MoE Transformer (Core Innovation)
+  { id: '3', position: { x: 200, y: 160 }, data: { label: 'Gemini 1.5 Transformer (MoE)' }, style: { width: 400, height: 350, background: 'rgba(232, 245, 233, 0.5)', border: '1px dashed #2e7d32' }, type: 'group' },
+  { id: '3a', position: { x: 50, y: 30 }, parentNode: '3', data: { label: 'Learned Routing Function\n[Interleaves Data types]' }, style: { background: '#fff', width: 300 } },
   
-  // Experts
-  { id: '3b', position: { x: 20, y: 100 }, parentNode: '3', data: { label: 'Text Expert' }, style: { background: '#c8e6c9', width: 90, fontSize: '10px' } },
-  { id: '3c', position: { x: 130, y: 100 }, parentNode: '3', data: { label: 'Vision Expert' }, style: { background: '#c8e6c9', width: 90, fontSize: '10px' } },
-  { id: '3d', position: { x: 240, y: 100 }, parentNode: '3', data: { label: 'Audio Expert' }, style: { background: '#c8e6c9', width: 90, fontSize: '10px' } },
+  // 4. Multimodal Experts (Restored to show "Natively Multimodal" capability)
+  { id: '3b', position: { x: 20, y: 100 }, parentNode: '3', data: { label: 'Text/Code Expert' }, style: { background: '#c8e6c9', width: 100, fontSize: '11px' } },
+  { id: '3c', position: { x: 135, y: 100 }, parentNode: '3', data: { label: 'Vision Expert' }, style: { background: '#c8e6c9', width: 100, fontSize: '11px' } },
+  { id: '3d', position: { x: 250, y: 100 }, parentNode: '3', data: { label: 'Audio/Video Expert' }, style: { background: '#c8e6c9', width: 110, fontSize: '11px' } },
   
-  { id: '3e', position: { x: 50, y: 180 }, parentNode: '3', data: { label: 'Expert Output Aggregation' }, style: { background: '#fff', width: 250 } },
-  { id: '3f', position: { x: 50, y: 250 }, parentNode: '3', data: { label: 'RMSNorm & Residuals' }, style: { background: '#e8f5e9', width: 250 } },
+  { id: '3e', position: { x: 50, y: 180 }, parentNode: '3', data: { label: 'Sparse Output Aggregation' }, style: { background: '#fff', width: 300 } },
+  { id: '3f', position: { x: 50, y: 250 }, parentNode: '3', data: { label: 'RMSNorm & Residuals' }, style: { background: '#e8f5e9', width: 300 } },
 
   { id: '4', position: { x: 250, y: 550 }, data: { label: 'Output Generation' }, style: { background: '#ccffcc', border: '1px solid #333' } },
 ];
@@ -34,12 +35,15 @@ const initialNodes = [
 const initialEdges = [
   { id: 'e1-2', source: '1', target: '2' },
   { id: 'e2-3a', source: '2', target: '3a' },
-  { id: 'e3a-3b', source: '3a', target: '3b', animated: true },
-  { id: 'e3a-3c', source: '3a', target: '3c', animated: true },
-  { id: 'e3a-3d', source: '3a', target: '3d', animated: true },
+  // Routing to specific modality experts
+  { id: 'e3a-3b', source: '3a', target: '3b', animated: true, style: { stroke: '#2e7d32' } },
+  { id: 'e3a-3c', source: '3a', target: '3c', animated: true, style: { stroke: '#2e7d32' } },
+  { id: 'e3a-3d', source: '3a', target: '3d', animated: true, style: { stroke: '#2e7d32' } },
+  // Aggregation
   { id: 'e3b-3e', source: '3b', target: '3e' },
   { id: 'e3c-3e', source: '3c', target: '3e' },
   { id: 'e3d-3e', source: '3d', target: '3e' },
+  // Internal Flow
   { id: 'e3e-3f', source: '3e', target: '3f' },
   { id: 'e3f-4', source: '3f', target: '4' },
 ];
