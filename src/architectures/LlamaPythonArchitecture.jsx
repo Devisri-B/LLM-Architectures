@@ -26,8 +26,8 @@ const initialNodes = [
   { id: '2d', position: { x: 50, y: 180 }, parentNode: '2', data: { label: 'Residual Connection (+)' }, style: { height: 30, background: 'transparent', border: 'none', fontWeight: 'bold' } },
   
   // FFN
-  { id: '2e', position: { x: 50, y: 230 }, parentNode: '2', data: { label: 'RMSNorm' }, style: { background: '#fff', border: '1px solid #555', fontSize: '11px', width: 250 } },
-  { id: '2f', position: { x: 50, y: 290 }, parentNode: '2', data: { label: 'SwiGLU FeedForward\n[Gated Linear Unit]' }, style: { background: '#e1bee7', border: '1px solid #7b1fa2', width: 250 } },
+  { id: '2e', position: { x: 50, y: 250 }, parentNode: '2', data: { label: 'RMSNorm' }, style: { background: '#fff', border: '1px solid #555', fontSize: '11px', width: 250 } },
+  { id: '2f', position: { x: 50, y: 310 }, parentNode: '2', data: { label: 'SwiGLU FeedForward\n[Gated Linear Unit]' }, style: { background: '#e1bee7', border: '1px solid #7b1fa2', width: 250 } },
 
   { id: '3', position: { x: 250, y: 520 }, data: { label: 'Output Projection' }, style: { background: '#fff', border: '1px solid #333' } },
 ];
