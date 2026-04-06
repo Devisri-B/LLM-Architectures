@@ -154,7 +154,7 @@ const initialNodes = [
       topId: 'baseModelTop',
       bottomId: 'baseModelBottom',
     },
-    position: { x: 50, y: 125 },
+    position: { x: 50, y: 140 },
   },
   // Stage 1: Cold Start SFT node with custom Stage1SFTNode type
   {
@@ -169,7 +169,7 @@ const initialNodes = [
         </div>
       )
     },
-    position: { x: 50, y: 250 },
+    position: { x: 50, y: 300 },
   },
   // Stage 2: Reinforcement Learning node (vertical chain)
   {
@@ -185,7 +185,7 @@ const initialNodes = [
       topId: 'stage2Top',
       bottomId: 'stage2Bottom',
     },
-    position: { x: 41, y: 375 },
+    position: { x: 41, y: 460 },
     style: { width: 260 },
   },
   // Stage 3: Data Synthesis node (vertical chain)
@@ -202,7 +202,7 @@ const initialNodes = [
       topId: 'stage3Top',
       bottomId: 'stage3Bottom',
     },
-    position: { x: 50, y: 500 },
+    position: { x: 50, y: 620 },
   },
   // Stage 4: SFT with Synthetic Data (vertical chain)
   {
@@ -218,7 +218,7 @@ const initialNodes = [
       topId: 'stage4Top',
       bottomId: 'stage4Bottom',
     },
-    position: { x: 56, y: 625 },
+    position: { x: 56, y: 780 },
     style: { width: 230 },
   },
   // Stage 5: Final Reinforcement Learning node (vertical chain)
@@ -235,7 +235,7 @@ const initialNodes = [
       topId: 'stage5Top',
       bottomId: 'stage5Bottom',
     },
-    position: { x: 50, y: 750 },
+    position: { x: 50, y: 940 },
   },
   // Final Model node (vertical chain; final, so no bottom handle)
   {
@@ -266,7 +266,7 @@ const initialNodes = [
       topId: 'finalModelTop',
       isFinal: true,
     },
-    position: { x: 36, y: 875 },
+    position: { x: 36, y: 1100 },
     style: { width: 270, padding: 10},
   },
   // Info Node for Data Preprocessing (connected from the right-hand info handle)
@@ -288,7 +288,7 @@ const initialNodes = [
       info: 'Additional Info:\nCold Start SFT uses thousands of curated reasoning examples to improve readability and language consistency.',
       handleId: 'stage1Info',
     },
-    position: { x: 350, y: 252 },
+    position: { x: 350, y: 302 },
   },
 ];
 
@@ -376,23 +376,16 @@ const nodeTypes = {
   infoNode: InfoNode,
 };
 
-// Add edgeTypes object
 const edgeTypes = {
   redArrow: RedArrowEdge,
 };
 
-// Update the processedEdges to use the red arrow for all edges except info edges
-// ... existing code ...
-
-// Update the processedEdges to make all edges animated
 const processedEdges = initialEdges.map(edge => ({
   ...edge,
   animated: true,
   type: !edge.id.includes('info') ? 'redArrow' : undefined,
   style: edge.id.includes('info') ? { stroke: '#4D6BFE' } : undefined
 }));
-
-// ... existing code ...
 
 function DeepSeekR1() {
   const [nodes] = useState(initialNodes);
