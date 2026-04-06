@@ -16,13 +16,13 @@ const initialNodes = [
   { id: '2', position: { x: 250, y: 80 }, data: { label: 'Supervised Fine-Tuning (SFT)\n[High-quality Instruction Data]' }, style: { background: '#fff9c4', border: '1px solid #fbc02d' } },
   
   // RLHF Block
-  { id: '3', position: { x: 200, y: 160 }, data: { label: 'RLHF Alignment Process' }, style: { width: 350, height: 320, background: 'rgba(255, 243, 224, 0.5)', border: '1px dashed #ef6c00' }, type: 'group' },
-  { id: '3a', position: { x: 50, y: 40 }, parentNode: '3', data: { label: 'Reward Model\n[Trained on Human Preferences]' }, style: { background: '#ffe0b2', border: '1px solid #ff9800', width: 250 } },
-  { id: '3b', position: { x: 50, y: 120 }, parentNode: '3', data: { label: 'PPO Optimization\n[Proximal Policy Optimization]' }, style: { background: '#fff', border: '1px solid #333', width: 250 } },
-  { id: '3c', position: { x: 50, y: 200 }, parentNode: '3', data: { label: 'Safety Reward Model\n[Penalizes Harmful Outputs]' }, style: { background: '#ffcdd2', border: '1px solid #e53935', width: 250 } },
+  { id: '3', position: { x: 150, y: 180 }, data: { label: 'RLHF Alignment Process' }, style: { width: 600, height: 300, background: 'rgba(255, 243, 224, 0.5)', border: '1px dashed #ef6c00' }, type: 'group' },
+  { id: '3a', position: { x: 100, y: 30 }, parentNode: '3', data: { label: 'Reward Model\n[Trained on Human Preferences]' }, style: { background: '#ffe0b2', border: '1px solid #ff9800', width: 280 } },
+  { id: '3b', position: { x: 100, y: 210 }, parentNode: '3', data: { label: 'PPO Optimization\n[Proximal Policy Optimization]' }, style: { background: '#fff', border: '1px solid #333', width: 280 } },
+  { id: '3c', position: { x: 250, y: 120 }, parentNode: '3', data: { label: 'Safety Reward Model\n[Penalizes Harmful Outputs]' }, style: { background: '#ffcdd2', border: '1px solid #e53935', width: 280 } },
 
-  { id: '4', position: { x: 250, y: 520 }, data: { label: 'Ghost Attention (GAtt)\n[Multi-turn Context Consistency]' }, style: { background: '#d1c4e9', border: '1px solid #512da8' } },
-  { id: '5', position: { x: 250, y: 600 }, data: { label: 'Output: Llama-Instruct' }, style: { background: '#ccffcc', border: '1px solid #333' } },
+  { id: '4', position: { x: 250, y: 530 }, data: { label: 'Ghost Attention (GAtt)\n[Multi-turn Context Consistency]' }, style: { background: '#d1c4e9', border: '1px solid #512da8' } },
+  { id: '5', position: { x: 250, y: 640 }, data: { label: 'Output: Llama-Instruct' }, style: { background: '#ccffcc', border: '1px solid #333' } },
 ];
 
 const initialEdges = [
@@ -41,7 +41,7 @@ export default function LlamaInstructArchitecture() {
 
   // 3. Return the isolated ReactFlow instance
   return (
-    <div style={{ width: '100%', height: '600px' }}>
+    <div style={{ width: '100%', height: '700px' }}>
       <ReactFlow
         nodes={nodes}
         edges={edges}
