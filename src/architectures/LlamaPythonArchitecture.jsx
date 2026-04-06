@@ -20,7 +20,7 @@ const initialNodes = [
   
   // Attention Mechanics
   { id: '2b', position: { x: 50, y: 100 }, parentNode: '2', data: { label: 'Grouped Query Attention (GQA)\n[Efficiency Opt]' }, style: { background: '#e8f5e9', border: '1px solid #2e7d32', width: 250 } },
-  { id: '2c', position: { x: 210, y: 100 }, parentNode: '2', data: { label: 'RoPE\n(Rotary Pos Emb)' }, style: { background: '#fff9c4', border: '1px solid #fbc02d', width: 80, fontSize: '10px' } }, // Floating label to side
+  { id: '2c', position: { x: 210, y: 180 }, parentNode: '2', data: { label: 'RoPE\n(Rotary Pos Emb)' }, style: { background: '#fff9c4', border: '1px solid #fbc02d', width: 80, fontSize: '10px' } }, // Floating label to side
   
   // Residual
   { id: '2d', position: { x: 50, y: 180 }, parentNode: '2', data: { label: 'Residual Connection (+)' }, style: { height: 30, background: 'transparent', border: 'none', fontWeight: 'bold' } },
