@@ -7,10 +7,10 @@ import ReactFlow, {
   useEdgesState,
   Handle,
   getBezierPath,
+  BaseEdge,
   MarkerType,
-} from 'react-flow-renderer';
-
-
+} from 'reactflow';
+import 'reactflow/dist/style.css';
 
 /* 
   Custom Node for Embedding Layers 
@@ -650,11 +650,10 @@ const RedArrowEdge = ({ id, sourceX, sourceY, targetX, targetY, sourcePosition, 
   });
 
   return (
-    <path
+    <BaseEdge
       id={id}
+      path={edgePath}
       style={{ ...style, stroke: '#ff0000', strokeWidth: 2 }}
-      className="react-flow__edge-path"
-      d={edgePath}
       markerEnd={markerEnd}
     />
   );
@@ -674,14 +673,13 @@ const DeepSeekV3 = () => {
   const processedEdges = initialEdges.map(edge => ({
     ...edge,
     animated: true,
-    type: !edge.id.includes('info') ? 'redArrow' : undefined,
-    style: edge.id.includes('info') ? { stroke: '#4D6BFE' } : undefined,
-    markerEnd: !edge.id.includes('info') ? {
+    type: 'redArrow',
+    markerEnd: {
       type: MarkerType.ArrowClosed,
       width: 20,
       height: 20,
       color: '#ff0000',
-    } : undefined
+    }
   }));
 
   return (
